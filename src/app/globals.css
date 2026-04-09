@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: #1B2B4B;
+    --gold: #C9A84C;
+    --cream: #FAF8F5;
+    --text: #1A1A1A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-[#1A1A1A] font-sans;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-navy-300 rounded-full;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gold text-white font-sans font-semibold text-sm px-7 py-3.5 rounded-none transition-all duration-200 hover:bg-gold-600 active:scale-[0.98] tracking-widest uppercase;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border border-[#1A1A1A] text-[#1A1A1A] font-sans font-semibold text-sm px-7 py-3.5 rounded-none transition-all duration-200 hover:bg-[#1A1A1A] hover:text-white active:scale-[0.98] tracking-widest uppercase;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-[#1A1A1A] font-sans font-medium text-sm transition-colors duration-200 hover:text-gold underline-offset-4 hover:underline;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl text-[#1A1A1A] leading-tight;
+  }
+
+  .section-subtitle {
+    @apply font-sans text-base text-navy-400 mt-3 max-w-xl;
+  }
+
+  .container-site {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Gold underline decoration */
+  .gold-line::after {
+    content: '';
+    @apply block w-12 h-0.5 bg-gold mt-4;
+  }
+
+  /* Property card hover */
+  .property-card {
+    @apply bg-white overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

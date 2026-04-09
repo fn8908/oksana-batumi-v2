@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "properties": "Properties",
+    "buy": "Buy",
+    "rent": "Rent",
+    "about": "About Me",
+    "invest": "For Investors",
+    "batumi": "About Batumi",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Message"
+  },
+  "hero": {
+    "badge": "Licensed Real Estate Agent",
+    "title": "Batumi Real Estate — with someone you can trust",
+    "subtitle": "Oksana Yatsenko — your personal guide to the Batumi property market. Honest. Transparent. Focused on you.",
+    "cta_primary": "View Properties",
+    "cta_secondary": "Message on WhatsApp",
+    "scroll_hint": "Scroll down"
+  },
+  "credibility": {
+    "deals": "deals closed",
+    "volume": "M$ in sales volume",
+    "years": "years in Batumi market",
+    "languages": "languages: rus, ukr, eng, geo"
+  },
+  "featured": {
+    "title": "Featured Properties",
+    "subtitle": "Personally curated listings — only what I believe in",
+    "buy_tab": "Buy",
+    "rent_tab": "Rent",
+    "view_all": "View all properties",
+    "ask_whatsapp": "Ask about this property",
+    "sea_view": "Sea view",
+    "new_build": "New build",
+    "hot": "Hot deal",
+    "ready": "Ready",
+    "sqm": "m²",
+    "rooms": "rooms",
+    "floor": "fl."
+  },
+  "about_snippet": {
+    "title": "Why clients trust me",
+    "text": "I've lived in Batumi for over 3 years. I know every district, every developer, and the real market prices — not the advertised ones. My job isn't to sell you anything — it's to help you make the right decision.",
+    "link": "Learn more about Oksana",
+    "name": "Oksana Yatsenko",
+    "years_label": "years in Batumi",
+    "fact1_title": "I live in Batumi",
+    "fact1_desc": "I know the market from the inside — not from statistics",
+    "fact2_title": "120+ closed deals",
+    "fact2_desc": "Clients from Russia, Ukraine, Israel, Europe",
+    "fact3_title": "I work for you, not the developer",
+    "fact3_desc": "Independent agent — no conflict of interest"
+  },
+  "services": {
+    "badge": "Services",
+    "title": "How I can help",
+    "all_link": "View all properties",
+    "items": {
+      "buy": {
+        "title": "Buy an apartment",
+        "desc": "Primary and secondary real estate in Batumi"
+      },
+      "rent": {
+        "title": "Rent a property",
+        "desc": "Apartments for long-term rental"
+      },
+      "newbuild": {
+        "title": "New builds",
+        "desc": "Off-plan and under-construction properties"
+      },
+      "land": {
+        "title": "Land plots",
+        "desc": "Land for construction in Adjara region"
+      },
+      "registration": {
+        "title": "Land registration",
+        "desc": "Legal assistance with land registration in Georgia"
+      },
+      "agri": {
+        "title": "Agricultural land conversion",
+        "desc": "Converting agricultural land to non-agricultural use"
+      }
+    }
+  },
+  "why_batumi": {
+    "title": "Why Batumi",
+    "subtitle": "5 reasons investors choose Batumi",
+    "items": {
+      "tax": {
+        "title": "0% capital gains tax",
+        "desc": "On properties held for more than 2 years"
+      },
+      "foreigners": {
+        "title": "No restrictions",
+        "desc": "Foreigners own property on equal terms with Georgian citizens"
+      },
+      "registry": {
+        "title": "4-day registration",
+        "desc": "Title registration through NAPR"
+      },
+      "yield": {
+        "title": "6–10% annual yield",
+        "desc": "Real rental returns when you choose the right property"
+      },
+      "tourism": {
+        "title": "4M tourists/year",
+        "desc": "Batumi's growing tourism ensures stable rental demand"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "subtitle": "Real people, real deals",
+    "review_label": "Review"
+  },
+  "final_cta": {
+    "title": "Ready to find your Batumi property?",
+    "subtitle": "Message me — I'll respond within an hour and send you a curated selection for your budget",
+    "whatsapp": "Message on WhatsApp",
+    "telegram": "Message on Telegram",
+    "or": "or"
+  },
+  "footer": {
+    "tagline": "Batumi made simple — if you know how",
+    "nav_title": "Navigation",
+    "contact_title": "Contact",
+    "phone": "+995 XXX XXX XXX",
+    "email": "oksana@oksanabatumi.com",
+    "address": "Batumi, Georgia",
+    "social_title": "Social Media",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy"
+  },
+  "floating": {
+    "whatsapp_tooltip": "WhatsApp",
+    "telegram_tooltip": "Telegram",
+    "whatsapp_message": "Hello! I'm interested in real estate in Batumi."
+  },
+  "about": {
+    "title": "Oksana Yatsenko",
+    "subtitle": "Professional Real Estate Agent in Batumi",
+    "story_title": "My story",
+    "story": "I moved to Batumi in 2023 — and fell in love with the city. In 3 years I've closed over 120 deals, helping clients from Russia, Ukraine, Israel and Europe find their place on the Black Sea coast. I don't work for developers. I work for you.",
+    "story_p1": "I moved to Batumi in 2023 — and stayed forever. I fell in love with this city: the Black Sea, the Adjara mountains on the horizon, the blend of architectural eras in the Old Town, the rapid growth of the new coastal district.",
+    "story_p2": "I started working at an agency, but quickly realized clients need someone who will honestly talk about risks — not someone who sells at any cost. I became an independent agent and never looked back.",
+    "story_p3": "In 3 years I've closed over 120 deals, helping Russians, Ukrainians, Belarusians, Kazakhs, Israelis, Turks and Europeans find their place on the Black Sea — for living, investing or holiday.",
+    "approach_title": "My approach",
+    "approach": "I tell the truth — even if that means talking you out of a purchase. Because trust matters more than any single deal.",
+    "approach_1": "I tell the truth about risks — even if it means losing the deal",
+    "approach_2": "I don't work for developers — I work for you",
+    "approach_3": "I conduct independent due diligence on every property",
+    "approach_4": "I guide you from search to getting the keys",
+    "approach_5": "I help with property management and rental after purchase",
+    "approach_6": "Available on WhatsApp and Telegram — I respond within an hour",
+    "stat_deals": "deals closed",
+    "stat_volume": "in sales volume",
+    "stat_years": "years in Batumi",
+    "stat_languages": "languages",
+    "cta": "Let's connect",
+    "cta_bottom_title": "Ready to connect?",
+    "cta_bottom_text": "Message me — I'll tell you about the market, answer your questions, and find the right options",
+    "cta_bottom_btn": "Message on WhatsApp"
+  },
+  "properties": {
+    "title": "Property Listings",
+    "subtitle": "Buy, sell and rent real estate in Batumi",
+    "badge": "Batumi",
+    "filters": "Filters",
+    "reset": "Reset",
+    "reset_filters": "Reset filters",
+    "found_prefix": "Found:",
+    "found_suffix": "properties",
+    "no_objects": "No properties",
+    "filter_type": "Type",
+    "filter_buy": "Buy",
+    "filter_rent": "Rent",
+    "filter_district": "District",
+    "filter_price": "Price, $",
+    "filter_rooms": "Rooms",
+    "filter_sea_view": "Sea view",
+    "filter_any": "Any",
+    "filter_yes": "Yes",
+    "no_results": "No properties found. Try adjusting the filters.",
+    "ask_oksana": "Ask Oksana",
+    "details": "View details",
+    "per_sqm": "per m²",
+    "monthly": "/mo"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "I respond within an hour",
+    "name": "Your name",
+    "phone": "WhatsApp or phone",
+    "message": "What are you looking for?",
+    "send": "Send message",
+    "or_directly": "Or contact me directly"
+  },
+  "batumi": {
+    "hero_title": "About Batumi",
+    "hero_subtitle": "The capital of Adjara — a Black Sea resort that has become the region's investment hub",
+    "city_title": "A city that's growing",
+    "city_text": "Batumi is a port city on the Black Sea coast with a population of approximately 170,000. Over the past 15 years it has transformed from a Soviet-era resort into a modern hub for tourism and investment in the South Caucasus. Belle Époque architecture, Soviet-era blocks and glass skyscrapers coexist here — and the city changes faster every year.",
+    "facts_title": "Batumi by the numbers",
+    "fact1_value": "4M",
+    "fact1_label": "tourists per year",
+    "fact2_value": "+80%",
+    "fact2_label": "property price growth since 2020",
+    "fact3_value": "60%",
+    "fact3_label": "of buyers are foreign nationals",
+    "fact4_value": "8%",
+    "fact4_label": "average rental yield",
+    "districts_title": "Best areas to buy",
+    "d1_name": "New Boulevard",
+    "d1_desc": "Main tourist zone. High rental demand, sea views, well-developed infrastructure.",
+    "d2_name": "Old Town",
+    "d2_desc": "Historic centre with unique architecture. Year-round tourist footfall.",
+    "d3_name": "Nurigeli / Gonio",
+    "d3_desc": "Quiet suburb for living. Clean air, villas, houses with gardens.",
+    "d4_name": "Sarpi",
+    "d4_desc": "Border area on the sea. Fast price growth, beach, promising location.",
+    "why_title": "Why Batumi",
+    "cta_title": "Want to buy property in Batumi?",
+    "cta_text": "Oksana lives and works in Batumi — she knows every neighbourhood from the inside and the real market prices.",
+    "cta_btn": "Message on WhatsApp"
+  },
+  "invest": {
+    "hero_title": "For Investors",
+    "hero_subtitle": "How to buy property in Batumi and earn a stable income — without unnecessary risk or hidden costs",
+    "steps_title": "How it works",
+    "step1_title": "Initial consultation",
+    "step1_desc": "We discuss the market, your budget and goals: buy to live, rent out short-term, or resell in 2–3 years.",
+    "step2_title": "Property selection",
+    "step2_desc": "I show you suitable options — only vetted developers and owners, no hidden fees.",
+    "step3_title": "Legal due diligence",
+    "step3_desc": "We verify ownership, encumbrances and documents. We work with independent lawyers.",
+    "step4_title": "Transaction & registration",
+    "step4_desc": "I accompany you at every step. Registration through NAPR takes 4 business days.",
+    "step5_title": "After purchase",
+    "step5_desc": "I'll help set up rental management or find tenants.",
+    "yield_title": "Yields in Batumi",
+    "yield1_value": "5–8%",
+    "yield1_label": "long-term rental per year",
+    "yield2_value": "8–12%",
+    "yield2_label": "short-term rental per year",
+    "yield3_value": "+15–25%",
+    "yield3_label": "price growth over 2–3 years",
+    "cta_title": "Start with a free consultation",
+    "cta_text": "No commitment. I'll tell you what's happening in the Batumi market right now.",
+    "cta_btn": "Message on WhatsApp"
+  },
+  "expertise": {
+    "badge": "Expertise",
+    "title": "Complete Protection When Buying",
+    "subtitle": "Three key services that protect your investment from risks",
+    "cta": "Start consultation",
+    "items": {
+      "technical": {
+        "title": "Technical Inspection",
+        "desc": "Checking construction quality, structural condition, engineering systems. I identify hidden problems before the deal.",
+        "benefit": "Know the real condition"
+      },
+      "legal": {
+        "title": "Legal Support",
+        "desc": "Verification of ownership rights, encumbrances and documents. I guarantee clean transactions and protect your interests.",
+        "benefit": "Your deal will be safe"
+      },
+      "rental": {
+        "title": "Rental Management Help",
+        "desc": "Finding and setting up property management companies. I help maximize your rental income.",
+        "benefit": "Steady income from day one"
+      }
+    }
+  },
+  "consulting": {
+    "badge": "Consulting",
+    "title": "Investment Consulting",
+    "subtitle": "Three services that turn a risky purchase into a profitable investment",
+    "cta": "Start consultation",
+    "items": {
+      "audit": {
+        "title": "Technical Audit",
+        "desc": "Independent inspection of construction quality, hidden defects and engineering systems. I identify problems BEFORE the deal.",
+        "benefit": "You know the real state"
+      },
+      "legal": {
+        "title": "Legal Support",
+        "desc": "Verification of ownership rights, encumbrances, transaction history. I guarantee clean documents and protect your interests.",
+        "benefit": "Deal is 100% safe"
+      },
+      "management": {
+        "title": "Property Management Selection",
+        "desc": "Help finding a reliable partner for managing rental operations. I maximize income, minimize hassles.",
+        "benefit": "Income from day one"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Useful articles about the Batumi real estate market",
+    "coming_title": "Articles coming soon",
+    "coming_text": "I write about the Batumi property market: which districts are growing, how to avoid developer mistakes, real yields and legal nuances.",
+    "subscribe_text": "In the meantime, follow me on Instagram or YouTube — I post content there regularly.",
+    "instagram_btn": "Instagram",
+    "youtube_btn": "YouTube",
+    "cta_title": "Have a question right now?",
+    "cta_btn": "Message on WhatsApp"
+  }
+}

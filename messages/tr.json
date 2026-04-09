@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "properties": "Mülkler",
+    "buy": "Satın Al",
+    "rent": "Kirala",
+    "about": "Hakkımda",
+    "invest": "Yatırımcılar",
+    "batumi": "Batum Hakkında",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "cta": "Mesaj"
+  },
+  "hero": {
+    "badge": "Profesyonel Emlak Danışmanı",
+    "title": "Batum'da Emlak — Güvenilir Biriyle",
+    "subtitle": "Oksana Yatsenko — Batum emlak piyasasında kişisel rehberiniz. Dürüst. Şeffaf. Sizin için.",
+    "cta_primary": "Mülkleri Gör",
+    "cta_secondary": "WhatsApp'ta Yaz",
+    "scroll_hint": "Aşağı kaydır"
+  },
+  "credibility": {
+    "deals": "kapanan anlaşma",
+    "volume": "M$ satış hacmi",
+    "years": "yıl Batum piyasasında",
+    "languages": "dil: rus, ukr, ing, geo"
+  },
+  "featured": {
+    "title": "Öne Çıkan Mülkler",
+    "subtitle": "Kişisel olarak seçilmiş ilanlar",
+    "buy_tab": "Satın Al",
+    "rent_tab": "Kirala",
+    "view_all": "Tüm mülkleri gör",
+    "ask_whatsapp": "Detayları öğren",
+    "sea_view": "Deniz manzarası",
+    "new_build": "Yeni bina",
+    "hot": "Sıcak fırsat",
+    "ready": "Hazır",
+    "sqm": "m²",
+    "rooms": "oda",
+    "floor": "kat"
+  },
+  "about_snippet": {
+    "title": "Müşteriler neden güveniyor",
+    "text": "3 yılı aşkın süredir Batum'da yaşıyorum. Her mahalleyi, her müteahhidi ve gerçek fiyatları biliyorum.",
+    "link": "Oksana hakkında daha fazla",
+    "name": "Oksana Yatsenko",
+    "years_label": "yıl Batum'da",
+    "fact1_title": "Batum'da yaşıyorum",
+    "fact1_desc": "Piyasayı içeriden biliyorum — istatistikten değil",
+    "fact2_title": "120+ kapanan anlaşma",
+    "fact2_desc": "Rusya, Ukrayna, İsrail, Avrupa'dan müşteriler",
+    "fact3_title": "Sizin için çalışıyorum, müteahhit için değil",
+    "fact3_desc": "Bağımsız danışman — çıkar çatışması yok"
+  },
+  "why_batumi": {
+    "title": "Neden Batum",
+    "subtitle": "Yatırımcıların Batum'u seçmesinin 5 nedeni",
+    "items": {
+      "tax": {
+        "title": "%0 vergi",
+        "desc": "2 yıldan fazla elde tutulan mülklerde sermaye kazancı vergisi yok"
+      },
+      "foreigners": {
+        "title": "Kısıtsız mülkiyet",
+        "desc": "Yabancılar Gürcü vatandaşlarla eşit haklara sahip"
+      },
+      "registry": {
+        "title": "4 günde tescil",
+        "desc": "NAPR üzerinden tapu tescili"
+      },
+      "yield": {
+        "title": "Yıllık %6–10 getiri",
+        "desc": "Doğru seçimde gerçekçi kira getirisi"
+      },
+      "tourism": {
+        "title": "4M turist/yıl",
+        "desc": "Batum'un büyüyen turizmi stabil kira talebi sağlıyor"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Müşteriler ne diyor",
+    "subtitle": "Gerçek insanlar, gerçek anlaşmalar",
+    "review_label": "Yorum"
+  },
+  "final_cta": {
+    "title": "Batum'da dairenizi bulmaya hazır mısınız?",
+    "subtitle": "Bana yazın — bir saat içinde yanıt veririm ve bütçenize uygun seçenekler sunarım",
+    "whatsapp": "WhatsApp'ta Yaz",
+    "telegram": "Telegram'da Yaz",
+    "or": "veya"
+  },
+  "footer": {
+    "tagline": "Batum basit — nasıl yapılacağını bilirseniz",
+    "nav_title": "Navigasyon",
+    "contact_title": "İletişim",
+    "phone": "+995 XXX XXX XXX",
+    "email": "oksana@oksanabatumi.com",
+    "address": "Batum, Gürcistan",
+    "social_title": "Sosyal Medya",
+    "rights": "Tüm hakları saklıdır",
+    "privacy": "Gizlilik Politikası"
+  },
+  "floating": {
+    "whatsapp_tooltip": "WhatsApp",
+    "telegram_tooltip": "Telegram",
+    "whatsapp_message": "Merhaba! Batum'da emlak ile ilgileniyorum."
+  },
+  "about": {
+    "title": "Oksana Yatsenko",
+    "subtitle": "Batum'da Profesyonel Emlak Danışmanı",
+    "story_title": "Hikayem",
+    "story": "2023'te Batum'a taşındım ve bu şehre aşık oldum. 3 yılda 120'den fazla anlaşma kapattım.",
+    "story_p1": "2023'te Batum'a taşındım — ve sonsuza kadar kaldım. Karadeniz, ufukta Acara dağları, Eski Şehir'in mimari karışımı — bu şehre aşık oldum.",
+    "story_p2": "Bir acentede çalışmaya başladım ama müşterilerin riskler hakkında dürüstçe konuşan birine ihtiyacı olduğunu gördüm. Bağımsız danışman oldum — ve hiç pişman olmadım.",
+    "story_p3": "3 yılda 120'den fazla anlaşma kapattım. Ruslara, Ukraynalılara, Belaruslulara, Kazaklara, İsrailli ve Avrupalılara Karadeniz kıyısında yer bulmalarına yardım ettim.",
+    "approach_title": "Yaklaşımım",
+    "approach": "Gerçeği söylüyorum — bu bir satın almadan vazgeçirmek anlamına gelse bile.",
+    "approach_1": "Riskler hakkında gerçeği söylüyorum — bu anlaşmayı kaybetmek anlamına gelse bile",
+    "approach_2": "Müteahhitler için değil, sizin için çalışıyorum",
+    "approach_3": "Her mülk için bağımsız durum tespiti yapıyorum",
+    "approach_4": "Aramadan anahtarları almaya kadar yanınızdayım",
+    "approach_5": "Satın alma sonrası yönetim ve kiralama konusunda yardım ediyorum",
+    "approach_6": "WhatsApp ve Telegram'da ulaşılabiliyorum — bir saat içinde yanıt veriyorum",
+    "stat_deals": "kapanan anlaşma",
+    "stat_volume": "satış hacmi",
+    "stat_years": "yıl Batum'da",
+    "stat_languages": "dil",
+    "cta": "Bağlanalım",
+    "cta_bottom_title": "Tanışmaya hazır mısınız?",
+    "cta_bottom_text": "Yazın — piyasayı anlatayım, sorularınızı yanıtlayayım, seçenekler bulayım",
+    "cta_bottom_btn": "WhatsApp'ta Yaz"
+  },
+  "properties": {
+    "title": "Mülk Kataloğu",
+    "subtitle": "Batum'da emlak alım, satım ve kiralama",
+    "badge": "Batum",
+    "filters": "Filtreler",
+    "reset": "Sıfırla",
+    "reset_filters": "Filtreleri sıfırla",
+    "found_prefix": "Bulundu:",
+    "found_suffix": "mülk",
+    "no_objects": "Mülk yok",
+    "filter_type": "Tür",
+    "filter_buy": "Satın Al",
+    "filter_rent": "Kirala",
+    "filter_district": "Bölge",
+    "filter_price": "Fiyat, $",
+    "filter_rooms": "Odalar",
+    "filter_sea_view": "Deniz manzarası",
+    "filter_any": "Herhangi",
+    "filter_yes": "Evet",
+    "no_results": "Mülk bulunamadı. Filtreleri değiştirmeyi deneyin.",
+    "ask_oksana": "Oksana'ya sor",
+    "details": "Detaylar",
+    "per_sqm": "m² başına",
+    "monthly": "/ay"
+  },
+  "services": {
+    "badge": "Hizmetler",
+    "title": "Nasıl yardımcı olabilirim",
+    "all_link": "Tüm mülkleri gör",
+    "items": {
+      "buy": {
+        "title": "Daire Satın Al",
+        "desc": "Batum'da birincil ve ikincil gayrimenkul"
+      },
+      "rent": {
+        "title": "Konut Kirala",
+        "desc": "Uzun vadeli kiralık daire ve apartmanlar"
+      },
+      "newbuild": {
+        "title": "Yeni Binalar",
+        "desc": "İnşaat aşamasındaki projeler"
+      },
+      "land": {
+        "title": "Arazi Parselleri",
+        "desc": "Acara'da inşaat için arazi satışı"
+      },
+      "registration": {
+        "title": "Parsel Kayıt",
+        "desc": "Gürcistan'da arazi hukuki kaydı için yardım"
+      },
+      "agri": {
+        "title": "Arazi Kategorisi Dönüşümü",
+        "desc": "Tarım arazisini tarım dışı kullanıma dönüştürme"
+      }
+    }
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "subtitle": "Bir saat içinde yanıt veririm",
+    "name": "Adınız",
+    "phone": "WhatsApp veya telefon",
+    "message": "Ne arıyorsunuz?",
+    "send": "Gönder",
+    "or_directly": "Veya doğrudan yazın"
+  },
+  "batumi": {
+    "hero_title": "Batum Hakkında",
+    "hero_subtitle": "Acara'nın başkenti — bölgenin yatırım merkezine dönüşen Karadeniz kıyı kenti",
+    "city_title": "Büyüyen bir şehir",
+    "city_text": "Batum, yaklaşık 170.000 nüfuslu Karadeniz kıyısında bir liman şehridir. Son 15 yılda Sovyet dönemi tatil beldesinden Güney Kafkasya'nın modern turizm ve yatırım merkezine dönüştü. Belle Époque mimarisi, Sovyet dönemi yapılar ve cam gökdelenler bir arada — şehir her yıl daha hızlı değişiyor.",
+    "facts_title": "Rakamlarla Batum",
+    "fact1_value": "4 Milyon",
+    "fact1_label": "yıllık turist",
+    "fact2_value": "+80%",
+    "fact2_label": "2020'den beri konut fiyatı artışı",
+    "fact3_value": "%60",
+    "fact3_label": "alıcılar yabancı uyruklu",
+    "fact4_value": "%8",
+    "fact4_label": "ortalama kira getirisi",
+    "districts_title": "Satın almak için en iyi bölgeler",
+    "d1_name": "Yeni Bulvar",
+    "d1_desc": "Ana turizm bölgesi. Yüksek kira talebi, deniz manzarası, gelişmiş altyapı.",
+    "d2_name": "Eski Şehir",
+    "d2_desc": "Özgün mimariyle tarihi merkez. Yıl boyu turist akışı.",
+    "d3_name": "Nurigeli / Gonio",
+    "d3_desc": "Yaşam için sakin banliyö. Temiz hava, villalar, bahçeli evler.",
+    "d4_name": "Sarpi",
+    "d4_desc": "Deniz kenarı sınır bölgesi. Hızlı fiyat artışı, plaj, umut vaat eden konum.",
+    "why_title": "Neden Batum",
+    "cta_title": "Batum'da mülk satın almak ister misiniz?",
+    "cta_text": "Oksana Batum'da yaşıyor ve çalışıyor — her mahalleyi içeriden biliyor ve gerçek fiyatları biliyor.",
+    "cta_btn": "WhatsApp'ta Mesaj Gönder"
+  },
+  "invest": {
+    "hero_title": "Yatırımcılar İçin",
+    "hero_subtitle": "Batum'da mülk nasıl satın alınır ve stabil gelir elde edilir — gereksiz risk ve gizli maliyet olmadan",
+    "steps_title": "Nasıl çalışır",
+    "step1_title": "İlk danışmanlık",
+    "step1_desc": "Piyasayı, bütçenizi ve hedeflerinizi tartışırız: yaşamak için satın alma, günlük kiralama veya 2–3 yıl sonra satış.",
+    "step2_title": "Mülk seçimi",
+    "step2_desc": "Uygun seçenekler gösteririm — yalnızca onaylı inşaatçılar ve sahipler, gizli komisyon yok.",
+    "step3_title": "Hukuki durum tespiti",
+    "step3_desc": "Tapu, ipotek ve belgeleri doğrularız. Bağımsız avukatlarla çalışırız.",
+    "step4_title": "İşlem ve tescil",
+    "step4_desc": "Her adımda yanınızdayım. NAPR üzerinden tapu tescili 4 iş günü sürer.",
+    "step5_title": "Satın alma sonrası",
+    "step5_desc": "Kiralama yönetimi veya kiracı bulmada yardımcı olurum.",
+    "yield_title": "Batum'da Getiriler",
+    "yield1_value": "%5–8",
+    "yield1_label": "uzun vadeli yıllık kira",
+    "yield2_value": "%8–12",
+    "yield2_label": "kısa vadeli yıllık kira",
+    "yield3_value": "+%15–25",
+    "yield3_label": "2–3 yıllık fiyat artışı",
+    "cta_title": "Ücretsiz danışmanlıkla başlayalım",
+    "cta_text": "Taahhüt yok. Batum piyasasında şu an ne olduğunu anlatırım.",
+    "cta_btn": "WhatsApp'ta Mesaj Gönder"
+  },
+  "expertise": {
+    "badge": "Uzmanlık",
+    "title": "Satın Alırken Tam Koruma",
+    "subtitle": "Yatırımınızı risklerden koruyan üç ana hizmet",
+    "cta": "Danışmanlığa başla",
+    "items": {
+      "technical": {
+        "title": "Teknik İnceleme",
+        "desc": "İnşaat kalitesi, yapısal durumu, mühendislik sistemlerinin kontrolü. Anlaşmadan önce gizli sorunları belirliyor.",
+        "benefit": "Gerçek durumu öğren"
+      },
+      "legal": {
+        "title": "Hukuki Destek",
+        "desc": "Tapu haklarının, ipoteklerin ve belgelerin kontrolü. Temiz işlemleri garanti ediyor.",
+        "benefit": "İşlem güvenli olacak"
+      },
+      "rental": {
+        "title": "Kira Yönetimi Yardımı",
+        "desc": "Mülk yönetim şirketinin bulunması ve kurulması. Kira gelirini maksimize etmeye yardımcı olur.",
+        "benefit": "İlk günden istikrarlı gelir"
+      }
+    }
+  },
+  "consulting": {
+    "badge": "Danışmanlık",
+    "title": "Yatırım Danışmanlığı",
+    "subtitle": "Riskli bir satın almayı karlı bir yatırıma dönüştüren üç hizmet",
+    "cta": "Danışmanlığa başla",
+    "items": {
+      "audit": {
+        "title": "Teknik Denetim",
+        "desc": "İnşaat kalitesi, gizli kusurlar ve mühendislik sistemlerinin bağımsız denetimi. Sorunları anlaşmadan ÖNCE belirliyor.",
+        "benefit": "Gerçek durumu biliyorsunuz"
+      },
+      "legal": {
+        "title": "Hukuki Destek",
+        "desc": "Tapu haklarının, ipoteklerin ve işlem tarihçesinin denetimi. Belgelerin temizliğini garanti ediyor.",
+        "benefit": "İşlem %100 güvenli"
+      },
+      "management": {
+        "title": "Yönetim Şirketi Seçimi",
+        "desc": "Kiralama işlemleri için güvenilir bir partner bulunması. Geliri maksimize et, zahmetleri minimize et.",
+        "benefit": "İlk günden gelir"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Batum emlak piyasası hakkında faydalı makaleler",
+    "coming_title": "Makaleler yakında geliyor",
+    "coming_text": "Batum emlak piyasası hakkında yazıyorum: hangi bölgeler büyüyor, inşaatçı hatalarından nasıl kaçınılır, gerçek getiriler ve hukuki nüanslar.",
+    "subscribe_text": "Bu arada Instagram veya YouTube'da beni takip edin — orada düzenli içerik paylaşıyorum.",
+    "instagram_btn": "Instagram",
+    "youtube_btn": "YouTube",
+    "cta_title": "Şu an sorunuz mu var?",
+    "cta_btn": "WhatsApp'ta Mesaj Gönder"
+  }
+}
