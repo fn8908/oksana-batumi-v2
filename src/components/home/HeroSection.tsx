@@ -15,7 +15,7 @@ export function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('/images/hero-batumi-panorama.jpg')",
+            "url('https://images.unsplash.com/photo-1504681869696-d977e22fdd02?w=1920&q=80')",
         }}
       />
       {/* Gradient overlay */}
