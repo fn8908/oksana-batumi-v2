@@ -95,7 +95,7 @@
     "nav_title": "Navigasyon",
     "contact_title": "İletişim",
     "phone": "+995 591 02 56 32",
-    "email": "oksana@oksanabatumi.com",
+    "email": "iatsenkooksana2@gmail.com",
     "address": "Batum, Gürcistan",
     "social_title": "Sosyal Medya",
     "rights": "Tüm hakları saklıdır",
@@ -299,12 +299,30 @@
   "blog": {
     "title": "Blog",
     "subtitle": "Batum emlak piyasası hakkında faydalı makaleler",
+    "all_posts_title": "Batum Piyasası Hakkında Tüm Makaleler",
     "coming_title": "Makaleler yakında geliyor",
     "coming_text": "Batum emlak piyasası hakkında yazıyorum: hangi bölgeler büyüyor, inşaatçı hatalarından nasıl kaçınılır, gerçek getiriler ve hukuki nüanslar.",
     "subscribe_text": "Bu arada Instagram veya YouTube'da beni takip edin — orada düzenli içerik paylaşıyorum.",
     "instagram_btn": "Instagram",
     "youtube_btn": "YouTube",
     "cta_title": "Şu an sorunuz mu var?",
-    "cta_btn": "WhatsApp'ta Mesaj Gönder"
+    "cta_btn": "WhatsApp'ta Mesaj Gönder",
+    "read_more": "Makaleyi oku",
+    "back": "← Tüm makaleler",
+    "min_read": "dk.",
+    "author": "Yazar",
+    "related": "İlgili makaleler",
+    "cta_article_title": "Batum piyasasını tartışmak ister misiniz?",
+    "cta_article_text": "Oksana'ya yazın — sorularınızı yanıtlayacak ve hedeflerinize uygun mülkler bulacaktır.",
+    "no_posts": "Bu kategoride henüz makale yok",
+    "categories": {
+      "all": "Tümü",
+      "market": "Piyasa",
+      "investment": "Yatırım",
+      "prices": "Fiyatlar",
+      "forecast": "Tahmin",
+      "trends": "Trendler",
+      "rental": "Kiralama"
+    }
   }
 }

@@ -126,7 +126,7 @@
     "nav_title": "Навігація",
     "contact_title": "Контакти",
     "phone": "+995 591 02 56 32",
-    "email": "oksana@oksanabatumi.com",
+    "email": "iatsenkooksana2@gmail.com",
     "address": "Батумі, Грузія",
     "social_title": "Соцмережі",
     "rights": "Усі права захищені",
@@ -299,12 +299,30 @@
   "blog": {
     "title": "Блог",
     "subtitle": "Корисні статті про ринок нерухомості Батумі",
+    "all_posts_title": "Всі статті про ринок Батумі",
     "coming_title": "Незабаром тут з'являться статті",
     "coming_text": "Пишу про ринок нерухомості Батумі: які райони ростуть, як не помилитися із забудовником, реальна дохідність і юридичні нюанси.",
     "subscribe_text": "Поки що підпишіться на Instagram або YouTube — там публікую матеріали регулярно.",
     "instagram_btn": "Instagram",
     "youtube_btn": "YouTube",
     "cta_title": "Є питання просто зараз?",
-    "cta_btn": "Написати у WhatsApp"
+    "cta_btn": "Написати у WhatsApp",
+    "read_more": "Читати статтю",
+    "back": "← Всі статті",
+    "min_read": "хв.",
+    "author": "Автор",
+    "related": "Читайте також",
+    "cta_article_title": "Хочете обговорити ринок Батумі?",
+    "cta_article_text": "Напишіть Оксані — відповість на питання і підбере об'єкт під ваші цілі.",
+    "no_posts": "У цій категорії поки немає статей",
+    "categories": {
+      "all": "Всі",
+      "market": "Ринок",
+      "investment": "Інвестиції",
+      "prices": "Ціни",
+      "forecast": "Прогнози",
+      "trends": "Тренди",
+      "rental": "Оренда"
+    }
   }
 }

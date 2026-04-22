@@ -126,7 +126,7 @@
     "nav_title": "Navigation",
     "contact_title": "Contact",
     "phone": "+995 591 02 56 32",
-    "email": "oksana@oksanabatumi.com",
+    "email": "iatsenkooksana2@gmail.com",
     "address": "Batumi, Georgia",
     "social_title": "Social Media",
     "rights": "All rights reserved",
@@ -299,12 +299,30 @@
   "blog": {
     "title": "Blog",
     "subtitle": "Useful articles about the Batumi real estate market",
+    "all_posts_title": "All Articles on the Batumi Market",
     "coming_title": "Articles coming soon",
     "coming_text": "I write about the Batumi property market: which districts are growing, how to avoid developer mistakes, real yields and legal nuances.",
     "subscribe_text": "In the meantime, follow me on Instagram or YouTube — I post content there regularly.",
     "instagram_btn": "Instagram",
     "youtube_btn": "YouTube",
     "cta_title": "Have a question right now?",
-    "cta_btn": "Message on WhatsApp"
+    "cta_btn": "Message on WhatsApp",
+    "read_more": "Read article",
+    "back": "← All articles",
+    "min_read": "min",
+    "author": "Author",
+    "related": "Related articles",
+    "cta_article_title": "Want to discuss the Batumi market?",
+    "cta_article_text": "Message Oksana — she'll answer your questions and find properties matching your goals.",
+    "no_posts": "No posts in this category yet",
+    "categories": {
+      "all": "All",
+      "market": "Market",
+      "investment": "Investment",
+      "prices": "Prices",
+      "forecast": "Forecast",
+      "trends": "Trends",
+      "rental": "Rental"
+    }
   }
 }

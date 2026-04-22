@@ -95,7 +95,7 @@
     "nav_title": "ניווט",
     "contact_title": "צור קשר",
     "phone": "+995 591 02 56 32",
-    "email": "oksana@oksanabatumi.com",
+    "email": "iatsenkooksana2@gmail.com",
     "address": "בטומי, גאורגיה",
     "social_title": "רשתות חברתיות",
     "rights": "כל הזכויות שמורות",
@@ -276,12 +276,30 @@
   "blog": {
     "title": "בלוג",
     "subtitle": "מאמרים שימושיים על שוק הנדל\"ן בבטומי",
+    "all_posts_title": "כל המאמרים על שוק בטומי",
     "coming_title": "מאמרים בקרוב",
     "coming_text": "כותבת על שוק הנדל\"ן בבטומי: אילו שכונות צומחות, איך להימנע מטעויות עם קבלנים, תשואות אמיתיות ודקויות משפטיות.",
     "subscribe_text": "בינתיים, עקבו אחרי ב-Instagram או YouTube — שם אני מפרסמת תוכן באופן קבוע.",
     "instagram_btn": "Instagram",
     "youtube_btn": "YouTube",
     "cta_title": "יש לכם שאלה עכשיו?",
-    "cta_btn": "כתוב בוואטסאפ"
+    "cta_btn": "כתוב בוואטסאפ",
+    "read_more": "קרא מאמר",
+    "back": "← כל המאמרים",
+    "min_read": "דק'",
+    "author": "מחבר",
+    "related": "מאמרים קשורים",
+    "cta_article_title": "רוצים לדון בשוק בטומי?",
+    "cta_article_text": "כתבו לאוקסנה — תענה על שאלותיכם ותמצא נכסים המתאימים למטרותיכם.",
+    "no_posts": "אין מאמרים בקטגוריה זו עדיין",
+    "categories": {
+      "all": "הכל",
+      "market": "שוק",
+      "investment": "השקעות",
+      "prices": "מחירים",
+      "forecast": "תחזית",
+      "trends": "מגמות",
+      "rental": "השכרה"
+    }
   }
 }
