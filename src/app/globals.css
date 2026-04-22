@@ -80,3 +80,39 @@
     text-wrap: balance;
   }
 }
+
+/* Blog article content styles */
+.blog-content h2 {
+  @apply font-serif text-2xl md:text-3xl text-[#1B2B4B] mt-10 mb-4 leading-tight;
+}
+.blog-content h3 {
+  @apply font-serif text-xl text-[#1B2B4B] mt-8 mb-3 leading-tight;
+}
+.blog-content p {
+  @apply font-sans text-base text-[#333] leading-relaxed mb-5;
+}
+.blog-content ul {
+  @apply font-sans text-base text-[#333] mb-6 pl-6 space-y-2;
+  list-style: disc;
+}
+.blog-content li {
+  @apply leading-relaxed;
+}
+.blog-content strong {
+  @apply font-semibold text-[#1B2B4B];
+}
+.blog-content blockquote {
+  @apply border-l-4 border-[#C9A84C] bg-[#C9A84C]/5 pl-5 pr-4 py-3 my-6 font-sans text-base italic text-[#1B2B4B]/80;
+}
+.blog-content .stat-row {
+  @apply grid grid-cols-2 md:grid-cols-3 gap-4 my-8;
+}
+.blog-content .stat-card {
+  @apply bg-[#1B2B4B]/5 p-4 text-center;
+}
+.blog-content .stat-card .number {
+  @apply font-serif text-2xl text-[#C9A84C] leading-none;
+}
+.blog-content .stat-card .label {
+  @apply font-sans text-xs text-[#1B2B4B]/60 mt-1.5;
+}

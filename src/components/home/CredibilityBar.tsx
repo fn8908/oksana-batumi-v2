@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 
 const STATS = [
   { value: "50+", key: "deals" },
-  { value: "$15M+", key: "volume" },
   { value: "3", key: "years" },
   { value: "5", key: "languages" },
 ] as const;
@@ -13,7 +12,7 @@ export function CredibilityBar() {
   return (
     <section className="bg-white border-y border-gray-100">
       <div className="container-site">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-gray-100">
+        <div className="grid grid-cols-3 divide-x divide-gray-100">
           {STATS.map((stat) => (
             <div
               key={stat.key}

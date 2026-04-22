@@ -57,6 +57,7 @@ export function Header() {
   }
 
   const navLinks = [
+    { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/properties`, label: t("properties") },
     { href: `/${locale}/about`, label: t("about") },
     { href: `/${locale}/invest`, label: t("invest") },
@@ -71,9 +72,8 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-sm"
-          : "bg-transparent"
+        "bg-white/95 backdrop-blur-sm",
+        scrolled ? "shadow-sm" : "shadow-none"
       )}
     >
       <div className="container-site">
@@ -83,20 +83,10 @@ export function Header() {
             href={`/${locale}`}
             className="flex flex-col leading-none group"
           >
-            <span
-              className={cn(
-                "font-serif text-xl font-semibold tracking-tight transition-colors",
-                scrolled ? "text-navy" : "text-white"
-              )}
-            >
+            <span className="font-serif text-xl font-semibold tracking-tight text-navy transition-colors">
               Оксана Яценко
             </span>
-            <span
-              className={cn(
-                "font-sans text-xs tracking-widest uppercase transition-colors",
-                scrolled ? "text-gold" : "text-gold-300"
-              )}
-            >
+            <span className="font-sans text-xs tracking-widest uppercase text-gold transition-colors">
               Batumi Real Estate
             </span>
           </Link>
@@ -108,8 +98,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "font-sans text-sm font-medium transition-colors hover:text-gold",
-                  scrolled ? "text-navy" : "text-white/90",
+                  "font-sans text-sm font-medium text-navy transition-colors hover:text-gold",
                   pathname === link.href && "text-gold"
                 )}
               >
@@ -124,10 +113,7 @@ export function Header() {
             <div className="relative hidden md:block">
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className={cn(
-                  "flex items-center gap-1 font-sans text-sm font-medium transition-colors hover:text-gold",
-                  scrolled ? "text-navy" : "text-white/90"
-                )}
+                className="flex items-center gap-1 font-sans text-sm font-medium text-navy transition-colors hover:text-gold"
               >
                 {LOCALE_LABELS[locale]}
                 <ChevronDown
@@ -167,10 +153,7 @@ export function Header() {
             {/* Mobile menu toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className={cn(
-                "lg:hidden p-2 transition-colors",
-                scrolled ? "text-navy" : "text-white"
-              )}
+              className="lg:hidden p-2 text-navy transition-colors hover:text-gold"
               aria-label="Menu"
             >
               {mobileOpen ? <X size={22} /> : <Menu size={22} />}

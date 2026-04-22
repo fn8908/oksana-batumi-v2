@@ -6,17 +6,17 @@ const CONSULTING_SERVICES = [
   {
     key: "audit",
     icon: CheckCircle2,
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+    image: "/images/consulting-audit.jpg"
   },
   {
     key: "legal",
     icon: Scale,
-    image: "https://images.unsplash.com/photo-1521318898602-ecbc66ff144c?w=600&q=80"
+    image: "/images/consulting-legal.jpg"
   },
   {
     key: "management",
     icon: Briefcase,
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
+    image: "/images/consulting-rental.jpg"
   },
 ] as const;
 
