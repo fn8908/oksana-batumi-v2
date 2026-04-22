@@ -11,7 +11,7 @@ export function FinalCTA() {
       className="relative py-24 bg-cover bg-center overflow-hidden"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=80')",
+          "url('/images/hero-batumi-panorama.jpg')",
       }}
     >
       {/* Overlay */}

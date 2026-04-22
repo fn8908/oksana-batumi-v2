@@ -15,11 +15,11 @@ export function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1504681869696-d977e22fdd02?w=1920&q=80')",
+            "url('/images/hero-batumi-panorama.jpg')",
         }}
       />
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/60 to-navy/30" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/75 to-navy/50" />
 
       {/* Content */}
       <div className="relative z-10 container-site pt-20">
