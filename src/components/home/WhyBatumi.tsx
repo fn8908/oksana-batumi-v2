@@ -33,10 +33,10 @@ export function WhyBatumi() {
                 <div className="w-12 h-12 border border-gray-200 group-hover:border-white/30 flex items-center justify-center mx-auto mb-5 transition-colors">
                   <Icon size={20} className="text-gold group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="font-serif text-base text-[#1A1A1A] group-hover:text-white mb-2 transition-colors">
+                <h3 className="font-serif text-lg text-[#1A1A1A] group-hover:text-white mb-2 transition-colors">
                   {t(`items.${key}.title`)}
                 </h3>
-                <p className="font-sans text-xs text-gray-400 group-hover:text-white/70 leading-relaxed transition-colors">
+                <p className="font-sans text-sm text-gray-600 group-hover:text-white/70 leading-relaxed transition-colors">
                   {t(`items.${key}.desc`)}
                 </p>
               </div>
