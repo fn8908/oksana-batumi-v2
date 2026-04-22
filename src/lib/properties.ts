@@ -30,7 +30,7 @@ export interface Property {
 }
 
 export const DISTRICTS: Record<District, { ru: string; uk: string; en: string; ka: string; tr: string }> = {
-  seafront: { ru: "Морской бульвар", uk: "Морська набережна", en: "Seafront", ka: "საზღვაო ბულვარი", tr: "Sahil Bulvarı" },
+  seafront: { ru: "Аллея героев", uk: "Морська набережна", en: "Seafront", ka: "საზღვაო ბულვარი", tr: "Sahil Bulvarı" },
   "old-town": { ru: "Старый город", uk: "Старе місто", en: "Old Town", ka: "ძველი ქალაქი", tr: "Eski Şehir" },
   gonio: { ru: "Гонио", uk: "Гоніо", en: "Gonio", ka: "გონიო", tr: "Gonio" },
   "new-boulevard": { ru: "Новый бульвар", uk: "Новий бульвар", en: "New Boulevard", ka: "ახალი ბულვარი", tr: "Yeni Bulvar" },
