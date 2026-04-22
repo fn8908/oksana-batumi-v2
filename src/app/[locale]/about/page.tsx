@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { MapPin, Award, Users, MessageCircle, CheckCircle } from "lucide-react";
-import { getWhatsAppLink } from "@/lib/utils";
+import { MapPin, Award, Users, MessageCircle, CheckCircle, Send } from "lucide-react";
+import { getWhatsAppLink, getTelegramLink } from "@/lib/utils";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,15 +31,26 @@ export default function AboutPage() {
               <p className="font-sans text-white/60 text-base leading-relaxed max-w-md">
                 {t("story")}
               </p>
-              <a
-                href={getWhatsAppLink(tf("whatsapp_message"))}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary mt-8 inline-flex"
-              >
-                <MessageCircle size={16} />
-                {t("cta")}
-              </a>
+              <div className="flex flex-wrap gap-3 mt-8">
+                <a
+                  href={getWhatsAppLink(tf("whatsapp_message"))}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex"
+                >
+                  <MessageCircle size={16} />
+                  {t("cta")}
+                </a>
+                <a
+                  href={getTelegramLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary inline-flex"
+                >
+                  <Send size={16} />
+                  {t("cta_telegram")}
+                </a>
+              </div>
             </div>
             <div className="relative">
               <div className="aspect-[3/4] relative overflow-hidden max-w-xs sm:max-w-sm mx-auto">
@@ -119,15 +130,26 @@ export default function AboutPage() {
           <p className="font-sans text-navy/60 mb-8 max-w-md mx-auto">
             {t("cta_bottom_text")}
           </p>
-          <a
-            href={getWhatsAppLink(tf("whatsapp_message"))}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary inline-flex"
-          >
-            <MessageCircle size={16} />
-            {t("cta_bottom_btn")}
-          </a>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a
+              href={getWhatsAppLink(tf("whatsapp_message"))}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex"
+            >
+              <MessageCircle size={16} />
+              {t("cta_bottom_btn")}
+            </a>
+            <a
+              href={getTelegramLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary inline-flex"
+            >
+              <Send size={16} />
+              {t("cta_telegram")}
+            </a>
+          </div>
         </div>
       </section>
     </div>

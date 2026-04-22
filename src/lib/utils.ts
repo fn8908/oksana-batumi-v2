@@ -14,7 +14,7 @@ export function formatPrice(price: number, locale: string = "ru"): string {
 }
 
 export const WHATSAPP_NUMBER = "995591025632";
-export const TELEGRAM_USERNAME = "Oksana_Iatsenko";
+export const TELEGRAM_USERNAME = "oksana_yats_batumi";
 export const INSTAGRAM_URL = "https://www.instagram.com/oks.iatsenko";
 export const YOUTUBE_URL = "https://www.youtube.com/@Oksana_Iatsenko";
 

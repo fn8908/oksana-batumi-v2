@@ -160,7 +160,8 @@
     "cta": "Давайте познакомимся",
     "cta_bottom_title": "Готовы познакомиться?",
     "cta_bottom_text": "Напишите — расскажу о рынке, отвечу на вопросы, подберу варианты",
-    "cta_bottom_btn": "Написать в WhatsApp"
+    "cta_bottom_btn": "Написать в WhatsApp",
+    "cta_telegram": "Написать в Telegram"
   },
   "properties": {
     "title": "Каталог объектов",

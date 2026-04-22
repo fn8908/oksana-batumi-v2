@@ -160,7 +160,8 @@
     "cta": "Let's connect",
     "cta_bottom_title": "Ready to connect?",
     "cta_bottom_text": "Message me — I'll tell you about the market, answer your questions, and find the right options",
-    "cta_bottom_btn": "Message on WhatsApp"
+    "cta_bottom_btn": "Message on WhatsApp",
+    "cta_telegram": "Write on Telegram"
   },
   "properties": {
     "title": "Property Listings",

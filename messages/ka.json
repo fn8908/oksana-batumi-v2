@@ -129,7 +129,8 @@
     "cta": "დავუკავშირდეთ",
     "cta_bottom_title": "მზად ხართ გაცნობისთვის?",
     "cta_bottom_text": "დამიწერეთ — ბაზარზე გიამბობ, კითხვებს გიპასუხებ, ვარიანტებს შემოგთავაზებ",
-    "cta_bottom_btn": "WhatsApp-ზე დაწერა"
+    "cta_bottom_btn": "WhatsApp-ზე დაწერა",
+    "cta_telegram": "Telegram-ზე დაწერა"
   },
   "properties": {
     "title": "ობიექტების კატალოგი",
