@@ -122,8 +122,8 @@ export default function InvestPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle size={16} className="text-gold mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="font-serif text-lg text-navy mb-1">{item.title}</div>
-                    <p className="font-sans text-xs text-navy/55 leading-relaxed">{item.desc}</p>
+                    <div className="font-serif text-xl text-navy mb-2 font-semibold">{item.title}</div>
+                    <p className="font-sans text-sm text-navy/70 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </div>
