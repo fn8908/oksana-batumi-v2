@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { MessageCircle, TrendingUp, Users, Building2, MapPin } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/utils";
+import { PageHero } from "@/components/ui/PageHero";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -39,30 +40,12 @@ export default function BatumiPage() {
 
   return (
     <div className="pt-20">
-      {/* Hero */}
-      <section className="relative text-white py-24 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero-batumi-panorama.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/75 to-navy/50" />
-        <div className="relative z-10 container-site">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-6">
-              <span className="w-8 h-px bg-gold" />
-              <span className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">
-                Батуми, Грузия
-              </span>
-            </div>
-            <h1 className="font-serif text-5xl md:text-6xl text-white mb-6 leading-tight">
-              {t("hero_title")}
-            </h1>
-            <p className="font-sans text-white/60 text-lg leading-relaxed max-w-2xl">
-              {t("hero_subtitle")}
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        badge={t("hero_badge")}
+        title={t("hero_title")}
+        subtitle={t("hero_subtitle")}
+        withImage
+      />
 
       {/* Stats */}
       <section className="bg-white border-b border-navy/10">

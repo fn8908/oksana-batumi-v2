@@ -32,7 +32,7 @@ export default function AboutPage() {
                   {t("subtitle")}
                 </span>
               </div>
-              <h1 className="font-serif text-5xl text-white mb-6">{t("title")}</h1>
+              <h1 className="font-serif text-5xl text-white mb-6 gold-line">{t("title")}</h1>
               <p className="font-sans text-white/60 text-base leading-relaxed max-w-md">
                 {t("story")}
               </p>

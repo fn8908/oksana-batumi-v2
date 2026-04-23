@@ -199,6 +199,7 @@
     "or_directly": "Veya doğrudan yazın"
   },
   "batumi": {
+    "hero_badge": "Batum, Gürcistan",
     "hero_title": "Batum Hakkında",
     "hero_subtitle": "Acara'nın başkenti — bölgenin yatırım merkezine dönüşen Karadeniz kıyı kenti",
     "city_title": "Büyüyen bir şehir",
@@ -227,6 +228,7 @@
     "cta_btn": "WhatsApp'ta Mesaj Gönder"
   },
   "invest": {
+    "hero_badge": "Batum'da Yatırım",
     "hero_title": "Yatırımcılar İçin",
     "hero_subtitle": "Batum'da mülk nasıl satın alınır ve stabil gelir elde edilir — gereksiz risk ve gizli maliyet olmadan",
     "steps_title": "Nasıl çalışır",

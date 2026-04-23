@@ -199,6 +199,7 @@
     "or_directly": "Or contact me directly"
   },
   "batumi": {
+    "hero_badge": "Batumi, Georgia",
     "hero_title": "About Batumi",
     "hero_subtitle": "The capital of Adjara — a Black Sea resort that has become the region's investment hub",
     "city_title": "A city that's growing",
@@ -227,6 +228,7 @@
     "cta_btn": "Message on WhatsApp"
   },
   "invest": {
+    "hero_badge": "Investing in Batumi",
     "hero_title": "For Investors",
     "hero_subtitle": "How to buy property in Batumi and earn a stable income — without unnecessary risk or hidden costs",
     "steps_title": "How it works",

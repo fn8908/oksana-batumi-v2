@@ -56,7 +56,7 @@ export default function PropertiesPage() {
               {t("badge")}
             </span>
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl text-white mb-3">{t("title")}</h1>
+          <h1 className="font-serif text-4xl md:text-5xl text-white mb-3 gold-line">{t("title")}</h1>
           <p className="font-sans text-white/60 text-base">{t("subtitle")}</p>
         </div>
       </div>
