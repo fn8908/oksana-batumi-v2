@@ -14,6 +14,8 @@ export default function ContactPage() {
   const locale = useLocale();
 
   const whatsappMsg = tf("whatsapp_message");
+  const whatsappAria = t("whatsapp_aria");
+  const telegramAria = t("telegram_aria");
 
   return (
     <div className="pt-20">
@@ -37,6 +39,7 @@ export default function ContactPage() {
               href={getWhatsAppLink(whatsappMsg)}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={whatsappAria}
               className="flex items-center gap-6 bg-white border border-navy/10 p-8 hover:border-gold hover:shadow-lg transition-all group"
             >
               <div className="w-16 h-16 bg-[#25D366] flex items-center justify-center flex-shrink-0">
@@ -47,7 +50,7 @@ export default function ContactPage() {
                   WhatsApp
                 </div>
                 <div className="font-serif text-2xl text-navy">+995 591 025 632</div>
-                <div className="font-sans text-sm text-navy/50 mt-1">{t("subtitle")}</div>
+                <div className="font-sans text-sm text-navy/50 mt-1">{t("whatsapp_desc")}</div>
               </div>
               <div className="text-navy/30 group-hover:text-gold transition-colors">→</div>
             </a>
@@ -57,6 +60,7 @@ export default function ContactPage() {
               href={getTelegramLink()}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={telegramAria}
               className="flex items-center gap-6 bg-white border border-navy/10 p-8 hover:border-gold hover:shadow-lg transition-all group"
             >
               <div className="w-16 h-16 bg-[#229ED9] flex items-center justify-center flex-shrink-0">
@@ -67,7 +71,7 @@ export default function ContactPage() {
                   Telegram
                 </div>
                 <div className="font-serif text-2xl text-navy">@Oksana_Iatsenko</div>
-                <div className="font-sans text-sm text-navy/50 mt-1">{t("subtitle")}</div>
+                <div className="font-sans text-sm text-navy/50 mt-1">{t("telegram_desc")}</div>
               </div>
               <div className="text-navy/30 group-hover:text-gold transition-colors">→</div>
             </a>
@@ -126,6 +130,7 @@ export default function ContactPage() {
               href={getWhatsAppLink(whatsappMsg)}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={whatsappAria}
               className="btn-primary inline-flex"
             >
               <MessageCircle size={16} />

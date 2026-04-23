@@ -152,7 +152,7 @@ export default function AboutPage() {
               className="btn-secondary inline-flex"
             >
               <Send size={16} />
-              {t("cta_telegram")}
+              {t("cta_telegram")}{/* i18n-dup-ok: desktop/mobile CTA */}
             </a>
           </div>
         </div>

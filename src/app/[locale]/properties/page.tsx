@@ -104,7 +104,7 @@ export default function PropertiesPage() {
                       v !== "all" && "border-l border-navy/20"
                     )}
                   >
-                    {v === "all" ? t("filter_any") : v === "buy" ? t("filter_buy") : t("filter_rent")}
+                    {v === "all" ? t("filter_any") /* i18n-dup-ok: type/district/rooms/sea all use same label */ : v === "buy" ? t("filter_buy") : t("filter_rent")}
                   </button>
                 ))}
               </div>
@@ -120,7 +120,7 @@ export default function PropertiesPage() {
                 onChange={(e) => setDistrict(e.target.value as District | "all")}
                 className="w-full border border-navy/20 font-sans text-sm text-navy py-2 px-3 bg-white focus:outline-none focus:border-gold"
               >
-                <option value="all">{t("filter_any")}</option>
+                <option value="all">{t("filter_any")}{/* i18n-dup-ok: district select */}</option>
                 {(Object.entries(DISTRICTS) as [District, typeof DISTRICTS[District]][]).map(([key, val]) => (
                   <option key={key} value={key}>
                     {val[locale as keyof typeof val] ?? val.ru}
@@ -146,7 +146,7 @@ export default function PropertiesPage() {
             {/* Price max */}
             <div>
               <label className="font-sans text-xs text-navy/50 uppercase tracking-wider mb-1.5 block">
-                {t("filter_price")} до
+                {t("filter_price")}{/* i18n-dup-ok: min/max price labels */} до
               </label>
               <input
                 type="number"
@@ -170,7 +170,7 @@ export default function PropertiesPage() {
                     rooms === "all" ? "bg-navy text-white" : "text-navy hover:bg-navy/5"
                   )}
                 >
-                  {t("filter_any")}
+                  {t("filter_any")}{/* i18n-dup-ok: rooms filter */}
                 </button>
                 {ROOM_OPTIONS.map((r) => (
                   <button
@@ -201,7 +201,7 @@ export default function PropertiesPage() {
                     : "border-navy/20 text-navy hover:bg-navy/5"
                 )}
               >
-                {seaView ? t("filter_yes") : t("filter_any")}
+                {seaView ? t("filter_yes") : t("filter_any") /* i18n-dup-ok: sea view toggle */}
               </button>
             </div>
           </div>
@@ -235,7 +235,7 @@ export default function PropertiesPage() {
             <div className="font-serif text-2xl text-navy/30 mb-3">{t("no_objects")}</div>
             <p className="font-sans text-sm text-navy/40 mb-6">{t("no_results")}</p>
             <button onClick={resetFilters} className="btn-secondary">
-              {t("reset_filters")}
+              {t("reset_filters")}{/* i18n-dup-ok: empty-state reset button */}
             </button>
           </div>
         )}

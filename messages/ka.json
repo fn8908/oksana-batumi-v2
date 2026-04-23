@@ -196,7 +196,11 @@
     "phone": "WhatsApp ან ტელეფონი",
     "message": "რა გაინტერესებთ?",
     "send": "გაგზავნა",
-    "or_directly": "ან პირდაპირ დამიკავშირდით"
+    "or_directly": "ან პირდაპირ დამიკავშირდით",
+    "whatsapp_desc": "ერთ საათში გიპასუხებ",
+    "telegram_desc": "ერთ საათში გიპასუხებ",
+    "whatsapp_aria": "WhatsApp-ში დაწერა",
+    "telegram_aria": "Telegram-ში დაწერა"
   },
   "batumi": {
     "hero_badge": "ბათუმი, საქართველო",

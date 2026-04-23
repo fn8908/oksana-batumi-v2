@@ -196,7 +196,11 @@
     "phone": "WhatsApp veya telefon",
     "message": "Ne arıyorsunuz?",
     "send": "Gönder",
-    "or_directly": "Veya doğrudan yazın"
+    "or_directly": "Veya doğrudan yazın",
+    "whatsapp_desc": "Bir saat içinde yanıt veririm",
+    "telegram_desc": "Bir saat içinde yanıt veririm",
+    "whatsapp_aria": "WhatsApp'ta yaz",
+    "telegram_aria": "Telegram'da yaz"
   },
   "batumi": {
     "hero_badge": "Batum, Gürcistan",

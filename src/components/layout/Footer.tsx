@@ -114,7 +114,7 @@ export function Footer() {
                   href={`tel:${t("phone")}`}
                   className="font-sans text-sm text-white/60 hover:text-white transition-colors"
                 >
-                  {t("phone")}
+                  {t("phone")}{/* i18n-dup-ok: same value reused in href + visible text */}
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -123,7 +123,7 @@ export function Footer() {
                   href={`mailto:${t("email")}`}
                   className="font-sans text-sm text-white/60 hover:text-white transition-colors"
                 >
-                  {t("email")}
+                  {t("email")}{/* i18n-dup-ok: same value reused in href + visible text */}
                 </a>
               </li>
               <li className="flex items-start gap-3">

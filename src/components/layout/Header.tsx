@@ -204,7 +204,7 @@ export function Header() {
               className="mt-4 btn-primary justify-center"
             >
               <MessageCircle size={16} />
-              {t("cta")} WhatsApp
+              {t("cta")}{/* i18n-dup-ok: desktop/mobile nav */} WhatsApp
             </a>
           </div>
         </div>

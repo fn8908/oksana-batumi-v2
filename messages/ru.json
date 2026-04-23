@@ -196,7 +196,11 @@
     "phone": "WhatsApp или телефон",
     "message": "Что вас интересует?",
     "send": "Отправить",
-    "or_directly": "Или напишите напрямую"
+    "or_directly": "Или напишите напрямую",
+    "whatsapp_desc": "Отвечу в течение часа",
+    "telegram_desc": "Отвечу в течение часа",
+    "whatsapp_aria": "Написать в WhatsApp",
+    "telegram_aria": "Написать в Telegram"
   },
   "batumi": {
     "hero_badge": "Батуми, Грузия",

@@ -196,7 +196,11 @@
     "phone": "WhatsApp or phone",
     "message": "What are you looking for?",
     "send": "Send message",
-    "or_directly": "Or contact me directly"
+    "or_directly": "Or contact me directly",
+    "whatsapp_desc": "I respond within an hour",
+    "telegram_desc": "I respond within an hour",
+    "whatsapp_aria": "Message on WhatsApp",
+    "telegram_aria": "Message on Telegram"
   },
   "batumi": {
     "hero_badge": "Batumi, Georgia",

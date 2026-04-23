@@ -196,7 +196,11 @@
     "phone": "וואטסאפ או טלפון",
     "message": "מה אתה מחפש?",
     "send": "שלח",
-    "or_directly": "או כתוב ישירות"
+    "or_directly": "או כתוב ישירות",
+    "whatsapp_desc": "אענה תוך שעה",
+    "telegram_desc": "אענה תוך שעה",
+    "whatsapp_aria": "כתוב בוואטסאפ",
+    "telegram_aria": "כתוב בטלגרם"
   },
   "batumi": {
     "hero_badge": "בטומי, גאורגיה",
