@@ -14,7 +14,7 @@
   "hero": {
     "badge": "Licensed Real Estate Agent",
     "title": "Batumi Real Estate — with someone you can trust",
-    "subtitle": "Oksana Yatsenko — your personal guide to the Batumi property market. Honest. Transparent. Focused on you.",
+    "subtitle": "Oksana Iatsenko — your personal guide to the Batumi property market. Honest. Transparent. Focused on you.",
     "cta_primary": "View Properties",
     "cta_secondary": "Message on WhatsApp",
     "scroll_hint": "Scroll down"
@@ -44,7 +44,7 @@
     "title": "Why clients trust me",
     "text": "I've lived in Batumi for over 3 years. I know every district, every developer, and the real market prices — not the advertised ones. My job isn't to sell you anything — it's to help you make the right decision.",
     "link": "Learn more about Oksana",
-    "name": "Oksana Yatsenko",
+    "name": "Oksana Iatsenko",
     "years_label": "years in Batumi",
     "fact1_title": "I live in Batumi",
     "fact1_desc": "I know the market from the inside — not from statistics",
@@ -139,7 +139,7 @@
     "whatsapp_message": "Hello! I'm interested in real estate in Batumi."
   },
   "about": {
-    "title": "Oksana Yatsenko",
+    "title": "Oksana Iatsenko",
     "subtitle": "Professional Real Estate Agent in Batumi",
     "story_title": "My story",
     "story": "I moved to Batumi in 2023 — and fell in love with the city. In 3 years I've closed over 120 deals, helping clients from Russia, Ukraine, Israel and Europe find their place on the Black Sea coast. I don't work for developers. I work for you.",
@@ -163,8 +163,8 @@
     "cta_bottom_text": "Message me — I'll tell you about the market, answer your questions, and find the right options",
     "cta_bottom_btn": "Message on WhatsApp",
     "cta_telegram": "Write on Telegram",
-    "meta_title": "About — Oksana Yatsenko",
-    "meta_desc": "Oksana Yatsenko — professional real estate agent in Batumi with 3 years of experience. 50+ closed deals."
+    "meta_title": "About — Oksana Iatsenko",
+    "meta_desc": "Oksana Iatsenko — professional real estate agent in Batumi with 3 years of experience. 50+ closed deals."
   },
   "properties": {
     "title": "Property Listings",
@@ -208,8 +208,8 @@
     "location_desc": "Working across Batumi and Adjara",
     "cta_title": "Write right now",
     "cta_desc": "Tell me what you're looking for — I'll find options",
-    "meta_title": "Contact — Oksana Yatsenko",
-    "meta_desc": "Contact Oksana Yatsenko — real estate agent in Batumi, Georgia. WhatsApp, Telegram, reply within an hour."
+    "meta_title": "Contact — Oksana Iatsenko",
+    "meta_desc": "Contact Oksana Iatsenko — real estate agent in Batumi, Georgia. WhatsApp, Telegram, reply within an hour."
   },
   "batumi": {
     "hero_badge": "Batumi, Georgia",
@@ -344,12 +344,12 @@
       "trends": "Trends",
       "rental": "Rental"
     },
-    "meta_title": "Blog — Oksana Yatsenko | Batumi Real Estate Market",
+    "meta_title": "Blog — Oksana Iatsenko | Batumi Real Estate Market",
     "meta_desc": "Latest news and analysis of the Batumi real estate market: prices, districts, investments, forecasts."
   },
   "meta": {
-    "default_title": "Oksana Yatsenko | Real Estate in Batumi",
-    "template": "%s | Oksana Yatsenko",
+    "default_title": "Oksana Iatsenko | Real Estate in Batumi",
+    "template": "%s | Oksana Iatsenko",
     "default_desc": "Professional real estate agent in Batumi, Georgia. Buying, selling and renting apartments. Honest. Transparent. With care for you."
   }
 }
