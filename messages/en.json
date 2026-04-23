@@ -351,5 +351,31 @@
     "default_title": "Oksana Iatsenko | Real Estate in Batumi",
     "template": "%s | Oksana Iatsenko",
     "default_desc": "Professional real estate agent in Batumi, Georgia. Buying, selling and renting apartments. Honest. Transparent. With care for you."
+  },
+  "chat": {
+    "hint": "Got a question?",
+    "aria_open": "Live chat",
+    "aria_close": "Close",
+    "response_time": "Usually replies within an hour",
+    "greeting": "Hello! Write your question — I'll reply as soon as possible. 🏠",
+    "placeholder_name": "Your name",
+    "placeholder_phone": "Phone / WhatsApp (optional)",
+    "placeholder_message": "Your question...",
+    "send": "Send",
+    "sending": "Sending...",
+    "or_telegram": "Or write directly on",
+    "success_title": "Message sent!",
+    "success_desc": "Oksana received your question and will reply shortly.",
+    "error": "Failed to send. Please try again."
+  },
+  "property_detail": {
+    "back": "← Back to catalog",
+    "details": "Property Details",
+    "type_buy": "For Sale",
+    "type_rent": "For Rent",
+    "yield_label": "Annual Yield",
+    "contact_title": "Interested in this property?",
+    "contact_desc": "Message me — I'll reply within an hour",
+    "telegram_cta": "Message on Telegram"
   }
 }

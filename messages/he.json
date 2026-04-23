@@ -344,5 +344,15 @@
     "success_title": "ההודעה נשלחה!",
     "success_desc": "אוקסנה קיבלה את שאלתך ותענה בקרוב.",
     "error": "שליחה נכשלה. אנא נסה שוב."
+  },
+  "property_detail": {
+    "back": "← חזרה לקטלוג",
+    "details": "פרטי הנכס",
+    "type_buy": "למכירה",
+    "type_rent": "להשכרה",
+    "yield_label": "תשואה שנתית",
+    "contact_title": "מעוניינים בנכס זה?",
+    "contact_desc": "כתבו לי — אשיב תוך שעה",
+    "telegram_cta": "כתבו ב-Telegram"
   }
 }

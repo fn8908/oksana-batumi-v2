@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -15,6 +16,8 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+const BASE_URL = "https://www.oksana-batumi.com";
+
 export async function generateMetadata({
   params,
 }: {
@@ -23,6 +26,15 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   const siteTitle = t("default_title"); // i18n-dup-ok: used for both title and og:site_name
+
+  const hdrs = await headers();
+  const pathname = hdrs.get("x-pathname") ?? `/${locale}`;
+  const pathWithoutLocale = pathname.replace(new RegExp(`^/${locale}`), "") || "";
+
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, `${BASE_URL}/${l}${pathWithoutLocale}`])
+  );
+
   return {
     title: {
       default: siteTitle,
@@ -33,6 +45,10 @@ export async function generateMetadata({
       type: "website",
       locale,
       siteName: siteTitle,
+    },
+    alternates: {
+      canonical: `${BASE_URL}/${locale}${pathWithoutLocale}`,
+      languages,
     },
   };
 }

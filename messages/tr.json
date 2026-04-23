@@ -367,5 +367,15 @@
     "success_title": "Mesaj gönderildi!",
     "success_desc": "Oksana sorunuzu aldı ve en kısa sürede yanıt verecek.",
     "error": "Gönderilemedi. Lütfen tekrar deneyin."
+  },
+  "property_detail": {
+    "back": "← Kataloğa dön",
+    "details": "Mülk Özellikleri",
+    "type_buy": "Satılık",
+    "type_rent": "Kiralık",
+    "yield_label": "Yıllık Getiri",
+    "contact_title": "Bu mülkle ilgileniyor musunuz?",
+    "contact_desc": "Yazın — bir saat içinde yanıt veririm",
+    "telegram_cta": "Telegram'da yazın"
   }
 }

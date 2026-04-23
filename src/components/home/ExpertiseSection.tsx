@@ -6,17 +6,17 @@ const EXPERTISE_SERVICES = [
   {
     key: "technical",
     icon: CheckCircle2,
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
+    image: "https://images.pexels.com/photos/8482824/pexels-photo-8482824.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
   },
   {
     key: "legal",
     icon: Scale,
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80&auto=format&fit=crop&crop=center"
   },
   {
     key: "rental",
     icon: BarChart3,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80"
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80&auto=format&fit=crop&crop=center"
   },
 ] as const;
 
