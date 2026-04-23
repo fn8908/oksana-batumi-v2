@@ -20,13 +20,6 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-navy text-white py-20">
         <div className="container-site text-center">
-          <div className="inline-flex items-center gap-2 mb-6">
-            <span className="w-8 h-px bg-gold" />
-            <span className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">
-              {t("title")}
-            </span>
-            <span className="w-8 h-px bg-gold" />
-          </div>
           <h1 className="font-serif text-5xl text-white mb-4">{t("title")}</h1>
           <p className="font-sans text-white/60 text-lg flex items-center justify-center gap-2">
             <Clock size={16} className="text-gold" />
