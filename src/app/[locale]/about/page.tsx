@@ -1,13 +1,17 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { MessageCircle, CheckCircle, Send } from "lucide-react";
 import { getWhatsAppLink, getTelegramLink } from "@/lib/utils";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Обо мне",
-  description: "Яценко Оксана — профессиональный агент по недвижимости в Батуми с 3-летним опытом. 50+ закрытых сделок.",
-};
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+  return { title: t("meta_title"), description: t("meta_desc") };
+}
 
 export default function AboutPage() {
   const t = useTranslations("about");

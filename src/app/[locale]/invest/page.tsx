@@ -1,13 +1,17 @@
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { MessageCircle, CheckCircle } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/utils";
 import { PageHero } from "@/components/ui/PageHero";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Инвесторам — недвижимость в Батуми",
-  description: "Как купить недвижимость в Батуми для инвестиций. Доходность, процесс покупки, юридическое сопровождение.",
-};
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "invest" });
+  return { title: t("meta_title"), description: t("meta_desc") };
+}
 
 export default function InvestPage() {
   const t = useTranslations("invest");

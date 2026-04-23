@@ -162,7 +162,9 @@
     "cta_bottom_title": "Ready to connect?",
     "cta_bottom_text": "Message me — I'll tell you about the market, answer your questions, and find the right options",
     "cta_bottom_btn": "Message on WhatsApp",
-    "cta_telegram": "Write on Telegram"
+    "cta_telegram": "Write on Telegram",
+    "meta_title": "About — Oksana Yatsenko",
+    "meta_desc": "Oksana Yatsenko — professional real estate agent in Batumi with 3 years of experience. 50+ closed deals."
   },
   "properties": {
     "title": "Property Listings",
@@ -205,7 +207,9 @@
     "location_city": "Batumi, Georgia",
     "location_desc": "Working across Batumi and Adjara",
     "cta_title": "Write right now",
-    "cta_desc": "Tell me what you're looking for — I'll find options"
+    "cta_desc": "Tell me what you're looking for — I'll find options",
+    "meta_title": "Contact — Oksana Yatsenko",
+    "meta_desc": "Contact Oksana Yatsenko — real estate agent in Batumi, Georgia. WhatsApp, Telegram, reply within an hour."
   },
   "batumi": {
     "hero_badge": "Batumi, Georgia",
@@ -234,7 +238,9 @@
     "why_title": "Why Batumi",
     "cta_title": "Want to buy property in Batumi?",
     "cta_text": "Oksana lives and works in Batumi — she knows every neighbourhood from the inside and the real market prices.",
-    "cta_btn": "Message on WhatsApp"
+    "cta_btn": "Message on WhatsApp",
+    "meta_title": "About Batumi — Property, Districts, Investment",
+    "meta_desc": "Everything about Batumi: best districts for buying property, investment facts, why investors choose this city."
   },
   "invest": {
     "hero_badge": "Investing in Batumi",
@@ -260,7 +266,9 @@
     "yield3_label": "price growth over 2–3 years",
     "cta_title": "Start with a free consultation",
     "cta_text": "No commitment. I'll tell you what's happening in the Batumi market right now.",
-    "cta_btn": "Message on WhatsApp"
+    "cta_btn": "Message on WhatsApp",
+    "meta_title": "For Investors — Real Estate in Batumi",
+    "meta_desc": "How to buy property in Batumi for investment. Rental yield, buying process, legal support."
   },
   "expertise": {
     "badge": "Expertise",
@@ -335,6 +343,13 @@
       "forecast": "Forecast",
       "trends": "Trends",
       "rental": "Rental"
-    }
+    },
+    "meta_title": "Blog — Oksana Yatsenko | Batumi Real Estate Market",
+    "meta_desc": "Latest news and analysis of the Batumi real estate market: prices, districts, investments, forecasts."
+  },
+  "meta": {
+    "default_title": "Oksana Yatsenko | Real Estate in Batumi",
+    "template": "%s | Oksana Yatsenko",
+    "default_desc": "Professional real estate agent in Batumi, Georgia. Buying, selling and renting apartments. Honest. Transparent. With care for you."
   }
 }

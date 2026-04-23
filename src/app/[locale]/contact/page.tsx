@@ -1,12 +1,16 @@
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { MessageCircle, Send, MapPin, Clock } from "lucide-react";
 import { getWhatsAppLink, getTelegramLink } from "@/lib/utils";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Контакты — Оксана Яценко",
-  description: "Свяжитесь с Оксаной Яценко — агентом по недвижимости в Батуми. WhatsApp, Telegram, ответ в течение часа.",
-};
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
+  return { title: t("meta_title"), description: t("meta_desc") };
+}
 
 export default function ContactPage() {
   const t = useTranslations("contact");

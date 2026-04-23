@@ -11,11 +11,11 @@ import type { Metadata } from "next";
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
-  title: "Блог — Оксана Яценко | Рынок недвижимости Батуми",
-  description:
-    "Актуальные новости и аналитика рынка недвижимости Батуми: цены, районы, инвестиции, прогнозы.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+  return { title: t("meta_title"), description: t("meta_desc") };
+}
 
 const CATEGORY_COLOR: Record<string, string> = {
   market: "bg-blue-50 text-blue-700",

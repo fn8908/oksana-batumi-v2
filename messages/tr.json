@@ -131,7 +131,9 @@
     "cta_bottom_title": "Tanışmaya hazır mısınız?",
     "cta_bottom_text": "Yazın — piyasayı anlatayım, sorularınızı yanıtlayayım, seçenekler bulayım",
     "cta_bottom_btn": "WhatsApp'ta Yaz",
-    "cta_telegram": "Telegram'da Yaz"
+    "cta_telegram": "Telegram'da Yaz",
+    "meta_title": "Hakkımda — Oksana Yatsenko",
+    "meta_desc": "Oksana Yatsenko — Batum'da 3 yıllık deneyime sahip profesyonel emlak danışmanı. 50+ tamamlanmış işlem."
   },
   "properties": {
     "title": "Mülk Kataloğu",
@@ -205,7 +207,9 @@
     "location_city": "Batum, Gürcistan",
     "location_desc": "Batum ve Acara genelinde çalışıyorum",
     "cta_title": "Hemen yazın",
-    "cta_desc": "Ne aradığınızı söyleyin — seçenekler bulurum"
+    "cta_desc": "Ne aradığınızı söyleyin — seçenekler bulurum",
+    "meta_title": "İletişim — Oksana Yatsenko",
+    "meta_desc": "Oksana Yatsenko ile iletişime geçin — Batum'da gayrimenkul uzmanı. WhatsApp, Telegram, bir saat içinde yanıt."
   },
   "batumi": {
     "hero_badge": "Batum, Gürcistan",
@@ -234,7 +238,9 @@
     "why_title": "Neden Batum",
     "cta_title": "Batum'da mülk satın almak ister misiniz?",
     "cta_text": "Oksana Batum'da yaşıyor ve çalışıyor — her mahalleyi içeriden biliyor ve gerçek fiyatları biliyor.",
-    "cta_btn": "WhatsApp'ta Mesaj Gönder"
+    "cta_btn": "WhatsApp'ta Mesaj Gönder",
+    "meta_title": "Batum Hakkında — Mülk, Mahalleler, Yatırım",
+    "meta_desc": "Batum hakkında her şey: gayrimenkul için en iyi mahalleler, yatırım gerçekleri, yatırımcılar neden bu şehri seçiyor."
   },
   "invest": {
     "hero_badge": "Batum'da Yatırım",
@@ -260,7 +266,9 @@
     "yield3_label": "2–3 yıllık fiyat artışı",
     "cta_title": "Ücretsiz danışmanlıkla başlayalım",
     "cta_text": "Taahhüt yok. Batum piyasasında şu an ne olduğunu anlatırım.",
-    "cta_btn": "WhatsApp'ta Mesaj Gönder"
+    "cta_btn": "WhatsApp'ta Mesaj Gönder",
+    "meta_title": "Yatırımcılar İçin — Batum'da Gayrimenkul",
+    "meta_desc": "Batum'da yatırım amaçlı gayrimenkul nasıl alınır. Kira getirisi, satın alma süreci, hukuki destek."
   },
   "expertise": {
     "badge": "Uzmanlık",
@@ -335,6 +343,13 @@
       "forecast": "Tahmin",
       "trends": "Trendler",
       "rental": "Kiralama"
-    }
+    },
+    "meta_title": "Blog — Oksana Yatsenko | Batum Gayrimenkul Piyasası",
+    "meta_desc": "Batum gayrimenkul piyasasından güncel haberler ve analizler: fiyatlar, mahalleler, yatırımlar, tahminler."
+  },
+  "meta": {
+    "default_title": "Oksana Yatsenko | Batum'da Gayrimenkul",
+    "template": "%s | Oksana Yatsenko",
+    "default_desc": "Batum, Gürcistan'da profesyonel gayrimenkul danışmanı. Daire alım, satım ve kiralama. Dürüst. Şeffaf. Sizin için."
   }
 }

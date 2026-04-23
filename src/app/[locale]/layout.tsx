@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { Header } from "@/components/layout/Header";
@@ -15,20 +15,27 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: {
-    default: "Оксана Яценко | Недвижимость в Батуми",
-    template: "%s | Оксана Яценко",
-  },
-  description:
-    "Профессиональный агент по недвижимости в Батуми, Грузия. Купля, продажа и аренда квартир. Честно. Прозрачно. С заботой о вас.",
-  keywords: ["недвижимость Батуми", "купить квартиру Батуми", "аренда Батуми", "риэлтор Батуми", "Яценко Оксана"],
-  openGraph: {
-    type: "website",
-    locale: "ru_RU",
-    siteName: "Оксана Яценко | Недвижимость в Батуми",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const siteTitle = t("default_title"); // i18n-dup-ok: used for both title and og:site_name
+  return {
+    title: {
+      default: siteTitle,
+      template: t("template"),
+    },
+    description: t("default_desc"),
+    openGraph: {
+      type: "website",
+      locale,
+      siteName: siteTitle,
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
