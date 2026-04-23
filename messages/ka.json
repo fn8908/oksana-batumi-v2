@@ -200,7 +200,12 @@
     "whatsapp_desc": "ერთ საათში გიპასუხებ",
     "telegram_desc": "ერთ საათში გიპასუხებ",
     "whatsapp_aria": "WhatsApp-ში დაწერა",
-    "telegram_aria": "Telegram-ში დაწერა"
+    "telegram_aria": "Telegram-ში დაწერა",
+    "location_label": "მდებარეობა",
+    "location_city": "ბათუმი, საქართველო",
+    "location_desc": "ვმუშაობ მთელ ბათუმსა და აჭარაში",
+    "cta_title": "დაწერეთ ახლავე",
+    "cta_desc": "მითხარით, რა გაინტერესებთ — ვარიანტებს შემოგთავაზებ"
   },
   "batumi": {
     "hero_badge": "ბათუმი, საქართველო",

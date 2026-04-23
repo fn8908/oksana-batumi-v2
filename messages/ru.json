@@ -200,7 +200,12 @@
     "whatsapp_desc": "Отвечу в течение часа",
     "telegram_desc": "Отвечу в течение часа",
     "whatsapp_aria": "Написать в WhatsApp",
-    "telegram_aria": "Написать в Telegram"
+    "telegram_aria": "Написать в Telegram",
+    "location_label": "Местонахождение",
+    "location_city": "Батуми, Грузия",
+    "location_desc": "Работаю по всему Батуми и Аджарии",
+    "cta_title": "Напишите прямо сейчас",
+    "cta_desc": "Укажите, что вас интересует — подберу варианты"
   },
   "batumi": {
     "hero_badge": "Батуми, Грузия",

@@ -200,7 +200,12 @@
     "whatsapp_desc": "Bir saat içinde yanıt veririm",
     "telegram_desc": "Bir saat içinde yanıt veririm",
     "whatsapp_aria": "WhatsApp'ta yaz",
-    "telegram_aria": "Telegram'da yaz"
+    "telegram_aria": "Telegram'da yaz",
+    "location_label": "Konum",
+    "location_city": "Batum, Gürcistan",
+    "location_desc": "Batum ve Acara genelinde çalışıyorum",
+    "cta_title": "Hemen yazın",
+    "cta_desc": "Ne aradığınızı söyleyin — seçenekler bulurum"
   },
   "batumi": {
     "hero_badge": "Batum, Gürcistan",

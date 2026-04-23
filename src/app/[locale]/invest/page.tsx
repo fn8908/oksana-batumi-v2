@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { MessageCircle, CheckCircle, TrendingUp } from "lucide-react";
+import { MessageCircle, CheckCircle } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/utils";
 import { PageHero } from "@/components/ui/PageHero";
 import type { Metadata } from "next";

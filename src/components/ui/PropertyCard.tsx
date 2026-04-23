@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Waves, Building2, Flame, CheckCircle } from "lucide-react";
 import { cn, formatPrice, getWhatsAppLink } from "@/lib/utils";
 import type { Property } from "@/lib/properties";

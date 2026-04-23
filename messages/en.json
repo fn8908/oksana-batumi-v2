@@ -200,7 +200,12 @@
     "whatsapp_desc": "I respond within an hour",
     "telegram_desc": "I respond within an hour",
     "whatsapp_aria": "Message on WhatsApp",
-    "telegram_aria": "Message on Telegram"
+    "telegram_aria": "Message on Telegram",
+    "location_label": "Location",
+    "location_city": "Batumi, Georgia",
+    "location_desc": "Working across Batumi and Adjara",
+    "cta_title": "Write right now",
+    "cta_desc": "Tell me what you're looking for — I'll find options"
   },
   "batumi": {
     "hero_badge": "Batumi, Georgia",

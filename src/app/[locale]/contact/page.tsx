@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { MessageCircle, Send, MapPin, Clock } from "lucide-react";
 import { getWhatsAppLink, getTelegramLink } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   const t = useTranslations("contact");
   const tf = useTranslations("floating");
-  const locale = useLocale();
 
   const whatsappMsg = tf("whatsapp_message");
   const whatsappAria = t("whatsapp_aria");
@@ -83,21 +82,11 @@ export default function ContactPage() {
               </div>
               <div className="flex-1">
                 <div className="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-1">
-                  {locale === "ru" ? "Местонахождение" :
-                   locale === "uk" ? "Місцезнаходження" :
-                   locale === "ka" ? "მდებარეობა" :
-                   locale === "tr" ? "Konum" :
-                   locale === "he" ? "מיקום" :
-                   "Location"}
+                  {t("location_label")}
                 </div>
-                <div className="font-serif text-2xl text-navy">Батуми, Грузия</div>
+                <div className="font-serif text-2xl text-navy">{t("location_city")}</div>
                 <div className="font-sans text-sm text-navy/50 mt-1">
-                  {locale === "ru" ? "Работаю по всему Батуми и Аджарии" :
-                   locale === "uk" ? "Працюю по всьому Батумі та Аджарії" :
-                   locale === "ka" ? "ვმუშაობ მთელ ბათუმსა და აჭარაში" :
-                   locale === "tr" ? "Batum ve Acara genelinde çalışıyorum" :
-                   locale === "he" ? "עובדת בכל בטומי ואג'ריה" :
-                   "Working across Batumi and Adjara"}
+                  {t("location_desc")}
                 </div>
               </div>
             </div>
@@ -110,22 +99,8 @@ export default function ContactPage() {
 
           {/* Quick message via WhatsApp */}
           <div className="max-w-2xl mx-auto mt-8 bg-navy text-white p-10 text-center">
-            <h2 className="font-serif text-3xl mb-3">
-              {locale === "ru" ? "Напишите прямо сейчас" :
-               locale === "uk" ? "Напишіть просто зараз" :
-               locale === "ka" ? "დაწერეთ ახლავე" :
-               locale === "tr" ? "Hemen yazın" :
-               locale === "he" ? "כתבו עכשיו" :
-               "Write right now"}
-            </h2>
-            <p className="font-sans text-white/60 mb-8 text-sm">
-              {locale === "ru" ? "Укажите, что вас интересует — подберу варианты" :
-               locale === "uk" ? "Вкажіть, що вас цікавить — підберу варіанти" :
-               locale === "ka" ? "მითხარით, რა გაინტერესებთ — ვარიანტებს შემოგთავაზებ" :
-               locale === "tr" ? "Ne aradığınızı söyleyin — seçenekler bulurum" :
-               locale === "he" ? "ספרו מה אתם מחפשים — אמצא אפשרויות" :
-               "Tell me what you're looking for — I'll find options"}
-            </p>
+            <h2 className="font-serif text-3xl mb-3">{t("cta_title")}</h2>
+            <p className="font-sans text-white/60 mb-8 text-sm">{t("cta_desc")}</p>
             <a
               href={getWhatsAppLink(whatsappMsg)}
               target="_blank"

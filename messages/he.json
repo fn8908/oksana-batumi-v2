@@ -200,7 +200,12 @@
     "whatsapp_desc": "אענה תוך שעה",
     "telegram_desc": "אענה תוך שעה",
     "whatsapp_aria": "כתוב בוואטסאפ",
-    "telegram_aria": "כתוב בטלגרם"
+    "telegram_aria": "כתוב בטלגרם",
+    "location_label": "מיקום",
+    "location_city": "בטומי, גאורגיה",
+    "location_desc": "עובדת בכל בטומי ואג'ריה",
+    "cta_title": "כתבו עכשיו",
+    "cta_desc": "ספרו מה אתם מחפשים — אמצא אפשרויות"
   },
   "batumi": {
     "hero_badge": "בטומי, גאורגיה",

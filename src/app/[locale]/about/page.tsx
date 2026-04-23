@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
-import { MapPin, Award, Users, MessageCircle, CheckCircle, Send } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { MessageCircle, CheckCircle, Send } from "lucide-react";
 import { getWhatsAppLink, getTelegramLink } from "@/lib/utils";
 import type { Metadata } from "next";
 
@@ -12,8 +12,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const t = useTranslations("about");
   const tf = useTranslations("floating");
-  const locale = useLocale();
-
   return (
     <div className="pt-20">
       {/* Hero */}
