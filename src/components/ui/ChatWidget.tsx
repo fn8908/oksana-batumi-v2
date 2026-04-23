@@ -2,11 +2,13 @@
 
 import { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send, CheckCircle, Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 type State = "idle" | "open" | "loading" | "success" | "error";
 
 export function ChatWidget() {
+  const t = useTranslations("chat");
   const [state, setState] = useState<State>("idle");
   const [showHint, setShowHint] = useState(false);
   const [name, setName] = useState("");
@@ -46,7 +48,7 @@ export function ChatWidget() {
       setState("success");
     } catch {
       setState("error");
-      setErrorText("Не удалось отправить. Попробуйте ещё раз.");
+      setErrorText(t("error"));
       setTimeout(() => setState("open"), 3000);
     }
   }
@@ -77,13 +79,13 @@ export function ChatWidget() {
               </div>
               <div>
                 <div className="font-serif text-sm font-semibold text-white">Оксана Яценко</div>
-                <div className="font-sans text-xs text-white/50">Обычно отвечает в течение часа</div>
+                <div className="font-sans text-xs text-white/50">{t("response_time")}</div>
               </div>
             </div>
             <button
               onClick={handleClose}
               className="text-white/40 hover:text-white transition-colors"
-              aria-label="Закрыть"
+              aria-label={t("aria_close")}
             >
               <X size={18} />
             </button>
@@ -94,36 +96,34 @@ export function ChatWidget() {
             {state === "success" ? (
               <div className="flex flex-col items-center justify-center gap-3 py-10 px-6 text-center">
                 <CheckCircle size={40} className="text-green-500" />
-                <p className="font-serif text-lg text-navy">Сообщение отправлено!</p>
-                <p className="font-sans text-sm text-navy/60">
-                  Оксана получила ваш вопрос и ответит в ближайшее время.
-                </p>
+                <p className="font-serif text-lg text-navy">{t("success_title")}</p>
+                <p className="font-sans text-sm text-navy/60">{t("success_desc")}</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="p-5 flex flex-col gap-4">
                 {/* Приветственное сообщение */}
                 <div className="bg-cream px-4 py-3 text-sm font-sans text-navy/70 leading-relaxed">
-                  Здравствуйте! Напишите ваш вопрос — я отвечу как можно скорее. 🏠
+                  {t("greeting")}
                 </div>
 
                 <div className="flex flex-col gap-3">
                   <input
                     type="text"
-                    placeholder="Ваше имя"
+                    placeholder={t("placeholder_name")}
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="w-full border border-navy/20 px-3 py-2.5 font-sans text-sm text-navy placeholder:text-navy/30 focus:outline-none focus:border-gold transition-colors"
                   />
                   <input
                     type="tel"
-                    placeholder="Телефон / WhatsApp (необязательно)"
+                    placeholder={t("placeholder_phone")}
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     className="w-full border border-navy/20 px-3 py-2.5 font-sans text-sm text-navy placeholder:text-navy/30 focus:outline-none focus:border-gold transition-colors"
                   />
                   <textarea
                     ref={inputRef}
-                    placeholder="Ваш вопрос..."
+                    placeholder={t("placeholder_message")}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     rows={3}
@@ -145,14 +145,14 @@ export function ChatWidget() {
                   )}
                 >
                   {state === "loading" ? (
-                    <><Loader2 size={15} className="animate-spin" /> Отправка...</>
+                    <><Loader2 size={15} className="animate-spin" /> {t("sending")}</>
                   ) : (
-                    <><Send size={15} /> Отправить</>
+                    <><Send size={15} /> {t("send")}</>
                   )}
                 </button>
 
                 <p className="font-sans text-xs text-navy/40 text-center">
-                  Или напишите напрямую в{" "}
+                  {t("or_telegram")}{" "}
                   <a
                     href="https://t.me/Oksana_Iatsenko"
                     target="_blank"
@@ -175,14 +175,14 @@ export function ChatWidget() {
           onClick={handleOpen}
         >
           <MessageCircle size={16} className="text-gold flex-shrink-0" />
-          <span className="font-sans text-sm font-semibold">Есть вопрос?</span>
+          <span className="font-sans text-sm font-semibold">{t("hint")}</span>
         </div>
       )}
 
       {/* Кнопка-пузырь */}
       <button
         onClick={state === "idle" || state === "success" ? handleOpen : handleClose}
-        aria-label="Онлайн-чат"
+        aria-label={t("aria_open")}
         className={cn(
           "w-14 h-14 flex items-center justify-center shadow-xl transition-all duration-200 hover:scale-105",
           state === "idle" || state === "success" ? "bg-navy text-white" : "bg-navy/80 text-white"

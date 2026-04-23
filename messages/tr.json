@@ -351,5 +351,21 @@
     "default_title": "Oksana Iatsenko | Batum'da Gayrimenkul",
     "template": "%s | Oksana Iatsenko",
     "default_desc": "Batum, Gürcistan'da profesyonel gayrimenkul danışmanı. Daire alım, satım ve kiralama. Dürüst. Şeffaf. Sizin için."
+  },
+  "chat": {
+    "hint": "Sorunuz mu var?",
+    "aria_open": "Canlı sohbet",
+    "aria_close": "Kapat",
+    "response_time": "Genellikle bir saat içinde yanıt verir",
+    "greeting": "Merhaba! Sorunuzu yazın — en kısa sürede yanıtlayacağım. 🏠",
+    "placeholder_name": "Adınız",
+    "placeholder_phone": "Telefon / WhatsApp (isteğe bağlı)",
+    "placeholder_message": "Sorunuz...",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "or_telegram": "Ya da doğrudan yazın",
+    "success_title": "Mesaj gönderildi!",
+    "success_desc": "Oksana sorunuzu aldı ve en kısa sürede yanıt verecek.",
+    "error": "Gönderilemedi. Lütfen tekrar deneyin."
   }
 }
