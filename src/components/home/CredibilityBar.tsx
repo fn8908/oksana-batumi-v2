@@ -1,9 +1,11 @@
 import { useTranslations } from "next-intl";
 
+const LANGUAGES = ["ru", "uk", "en", "ka", "tr"] as const;
+
 const STATS = [
   { value: "50+", key: "deals", hasSub: true },
   { value: "3", key: "years", hasSub: false },
-  { value: "4", key: "languages", hasSub: false },
+  { value: String(LANGUAGES.length), key: "languages", hasSub: false },
 ] as const;
 
 export function CredibilityBar() {
