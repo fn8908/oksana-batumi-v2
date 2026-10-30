@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ArrowLeft, MapPin, Waves, Building2, Flame, CheckCircle } from "lucide-react";
-import { getPropertyBySlug, PROPERTIES } from "@/lib/properties";
+import { getPropertyBySlug, isRent, PROPERTIES } from "@/lib/properties";
 import { formatPrice, getWhatsAppLink, getTelegramLink } from "@/lib/utils";
 import { routing } from "@/i18n/routing";
 
@@ -140,7 +140,7 @@ export default async function PropertyDetailPage({
             </div>
 
             {/* Description */}
-            <p className="font-sans text-base text-ivory leading-relaxed">{description}</p>
+            <p className="font-sans text-base text-ivory leading-relaxed whitespace-pre-line">{description}</p>
           </div>
 
           {/* Sidebar */}
@@ -149,7 +149,7 @@ export default async function PropertyDetailPage({
             <div className="glass-card p-6">
               <div className="font-serif text-3xl text-ivory font-semibold mb-1">
                 {formatPrice(property.price)}
-                {property.type === "rent" && (
+                {isRent(property.type) && (
                   <span className="font-sans text-sm text-ivory/50 font-normal ml-1">
                     {tProperties("monthly")}
                   </span>
@@ -161,7 +161,7 @@ export default async function PropertyDetailPage({
                 </div>
               )}
               <div className="mt-3 inline-block bg-ivory/10 text-ivory font-sans text-xs font-semibold px-2 py-0.5">
-                {property.type === "buy" ? t("type_buy") : t("type_rent")}
+                {t(`type_${property.type.replace("-", "_")}`)}
               </div>
             </div>
 

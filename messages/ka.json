@@ -19,6 +19,15 @@
     "cta_secondary": "WhatsApp-ზე დაწერა",
     "scroll_hint": "გადაახვიეთ ქვემოთ"
   },
+  "quick_categories": {
+    "items": {
+      "purchase": "ყიდვა",
+      "sale": "გაყიდვა",
+      "rent": "გაქირავება",
+      "investment": "ინვესტიციები"
+    },
+    "cta": "მიიღეთ კონსულტაცია"
+  },
   "credibility": {
     "deals": "დახურული გარიგება",
     "volume": "მლნ $ გაყიდვების მოცულობა",
@@ -158,7 +167,9 @@
     "ask_oksana": "ოქსანას ჰკითხე",
     "details": "დეტალები",
     "per_sqm": "მ²-ზე",
-    "monthly": "/თვე"
+    "monthly": "/თვე",
+    "filter_commercial_buy": "კომერციული: ყიდვა",
+    "filter_commercial_rent": "კომერციული: ქირა"
   },
   "services": {
     "badge": "სერვისები",
@@ -376,6 +387,8 @@
     "yield_label": "შემოსავლიანობა / წელი",
     "contact_title": "დაინტერესდით?",
     "contact_desc": "დამიკავშირდით — ერთი საათის განმავლობაში გიპასუხებ",
-    "telegram_cta": "Telegram-ში დაწერა"
+    "telegram_cta": "Telegram-ში დაწერა",
+    "type_commercial_buy": "კომერციული, იყიდება",
+    "type_commercial_rent": "კომერციული, ქირავდება"
   }
 }

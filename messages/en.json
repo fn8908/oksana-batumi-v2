@@ -19,6 +19,15 @@
     "cta_secondary": "Message on WhatsApp",
     "scroll_hint": "Scroll down"
   },
+  "quick_categories": {
+    "items": {
+      "purchase": "Buy",
+      "sale": "Sell",
+      "rent": "Rent",
+      "investment": "Invest"
+    },
+    "cta": "Get a Consultation"
+  },
   "credibility": {
     "deals": "deals closed",
     "volume": "M$ in sales volume",
@@ -189,7 +198,9 @@
     "ask_oksana": "Ask Oksana",
     "details": "View details",
     "per_sqm": "per m²",
-    "monthly": "/mo"
+    "monthly": "/mo",
+    "filter_commercial_buy": "Commercial: buy",
+    "filter_commercial_rent": "Commercial: rent"
   },
   "contact": {
     "title": "Get in touch",
@@ -376,6 +387,8 @@
     "yield_label": "Annual Yield",
     "contact_title": "Interested in this property?",
     "contact_desc": "Message me — I'll reply within an hour",
-    "telegram_cta": "Message on Telegram"
+    "telegram_cta": "Message on Telegram",
+    "type_commercial_buy": "Commercial, for sale",
+    "type_commercial_rent": "Commercial, for rent"
   }
 }

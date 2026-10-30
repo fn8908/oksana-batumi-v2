@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { Waves, Building2, Flame, CheckCircle } from "lucide-react";
 import { cn, formatPrice, getWhatsAppLink } from "@/lib/utils";
-import type { Property } from "@/lib/properties";
+import { isRent, type Property } from "@/lib/properties";
 
 interface PropertyCardProps {
   property: Property;
@@ -90,7 +90,7 @@ export function PropertyCard({ property, locale }: PropertyCardProps) {
           <div>
             <div className="font-serif text-xl font-semibold text-ivory">
               {formatPrice(property.price)}
-              {property.type === "rent" && (
+              {isRent(property.type) && (
                 <span className="font-sans text-xs text-ivory/50 font-normal ml-1">
                   {t("monthly" as never) ?? "/мес"}
                 </span>

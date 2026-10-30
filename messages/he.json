@@ -19,6 +19,15 @@
     "cta_secondary": "כתוב בוואטסאפ",
     "scroll_hint": "גלול למטה"
   },
+  "quick_categories": {
+    "items": {
+      "purchase": "קנייה",
+      "sale": "מכירה",
+      "rent": "השכרה",
+      "investment": "השקעות"
+    },
+    "cta": "קבלו ייעוץ"
+  },
   "credibility": {
     "deals": "עסקאות שנסגרו",
     "volume": "מיליון $ בנפח מכירות",
@@ -158,7 +167,9 @@
     "ask_oksana": "שאל את אוקסנה",
     "details": "פרטים נוספים",
     "per_sqm": "למ\"ר",
-    "monthly": "/חודש"
+    "monthly": "/חודש",
+    "filter_commercial_buy": "מסחרי: קנייה",
+    "filter_commercial_rent": "מסחרי: השכרה"
   },
   "services": {
     "badge": "שירותים",
@@ -353,6 +364,8 @@
     "yield_label": "תשואה שנתית",
     "contact_title": "מעוניינים בנכס זה?",
     "contact_desc": "כתבו לי — אשיב תוך שעה",
-    "telegram_cta": "כתבו ב-Telegram"
+    "telegram_cta": "כתבו ב-Telegram",
+    "type_commercial_buy": "מסחרי, למכירה",
+    "type_commercial_rent": "מסחרי, להשכרה"
   }
 }

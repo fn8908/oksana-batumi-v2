@@ -1,4 +1,8 @@
-export type PropertyType = "buy" | "rent";
+import listings from "@/data/listings.json";
+
+export type PropertyType = "buy" | "rent" | "commercial-buy" | "commercial-rent";
+export const PROPERTY_TYPES: PropertyType[] = ["buy", "rent", "commercial-buy", "commercial-rent"];
+export const isRent = (type: PropertyType) => type.endsWith("rent");
 export type District =
   | "seafront"
   | "old-town"
@@ -10,7 +14,7 @@ export interface Property {
   id: string;
   type: PropertyType;
   title: { ru: string; uk: string; en: string; ka: string; tr: string };
-  district: District;
+  district: string;
   districtLabel: { ru: string; uk: string; en: string; ka: string; tr: string };
   price: number; // USD (buy) or USD/month (rent)
   pricePerSqm?: number; // only for buy
@@ -27,6 +31,53 @@ export interface Property {
   description: { ru: string; en: string };
   yield?: number; // annual % — invest properties
   slug: string;
+  sourceUrl?: string; // объявление на myhome.ge
+}
+
+// Объект из src/data/listings.json (заполняет scripts/myhome/sync.mjs)
+interface Listing {
+  id: string;
+  type: PropertyType;
+  title: { ru: string; en?: string };
+  description: { ru: string; en?: string };
+  district: string;
+  price: number;
+  pricePerSqm?: number;
+  area: number;
+  rooms: number;
+  floor: number;
+  totalFloors: number;
+  seaView: boolean;
+  isNewBuild: boolean;
+  photos: string[];
+  url: string;
+}
+
+function fromListing(l: Listing): Property {
+  const en = l.title.en || l.title.ru;
+  const label = { ru: l.district, uk: l.district, en: l.district, ka: l.district, tr: l.district };
+  return {
+    id: l.id,
+    slug: `myhome-${l.id}`,
+    type: l.type,
+    title: { ru: l.title.ru, uk: l.title.ru, en, ka: en, tr: en },
+    district: l.district,
+    districtLabel: label,
+    price: l.price,
+    pricePerSqm: l.pricePerSqm,
+    area: l.area,
+    rooms: l.rooms,
+    floor: l.floor,
+    totalFloors: l.totalFloors,
+    seaView: l.seaView,
+    isNewBuild: l.isNewBuild,
+    isReady: !l.isNewBuild,
+    isHot: false,
+    image: l.photos[0],
+    images: l.photos,
+    description: { ru: l.description.ru, en: l.description.en || l.description.ru },
+    sourceUrl: l.url,
+  };
 }
 
 export const DISTRICTS: Record<District, { ru: string; uk: string; en: string; ka: string; tr: string }> = {
@@ -37,7 +88,8 @@ export const DISTRICTS: Record<District, { ru: string; uk: string; en: string; k
   airport: { ru: "Аэропорт", uk: "Аеропорт", en: "Airport Area", ka: "აეროპორტი", tr: "Havalimanı" },
 };
 
-export const PROPERTIES: Property[] = [
+// Пока с myhome ничего не загружено - показываем демо-объекты
+const DEMO_PROPERTIES: Property[] = [
   {
     id: "1",
     slug: "seafront-studio-orbi",
@@ -307,6 +359,14 @@ export const PROPERTIES: Property[] = [
     },
   },
 ];
+
+export const PROPERTIES: Property[] =
+  (listings as Listing[]).length > 0 ? (listings as Listing[]).map(fromListing) : DEMO_PROPERTIES;
+
+// Районы, встречающиеся в текущих объектах (для фильтра)
+export const DISTRICT_OPTIONS: { key: string; label: Property["districtLabel"] }[] = Array.from(
+  new Map(PROPERTIES.map((p) => [p.district, { key: p.district, label: p.districtLabel }])).values()
+);
 
 export function getPropertiesByType(type: PropertyType): Property[] {
   return PROPERTIES.filter((p) => p.type === type);

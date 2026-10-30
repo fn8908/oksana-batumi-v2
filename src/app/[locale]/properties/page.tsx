@@ -3,18 +3,28 @@
 import { useState, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { SlidersHorizontal, X } from "lucide-react";
-import { PROPERTIES, DISTRICTS, type PropertyType, type District } from "@/lib/properties";
+import { PROPERTIES, DISTRICT_OPTIONS, PROPERTY_TYPES, type PropertyType } from "@/lib/properties";
 import { PropertyCard } from "@/components/ui/PropertyCard";
 import { cn } from "@/lib/utils";
 
 const ROOM_OPTIONS = [1, 2, 3, 4];
+// Коммерческие вкладки показываем, только если такие объекты есть
+const TYPE_OPTIONS = PROPERTY_TYPES.filter(
+  (t) => !t.startsWith("commercial") || PROPERTIES.some((p) => p.type === t)
+);
+const TYPE_KEY: Record<PropertyType, string> = {
+  buy: "filter_buy",
+  rent: "filter_rent",
+  "commercial-buy": "filter_commercial_buy",
+  "commercial-rent": "filter_commercial_rent",
+};
 
 export default function PropertiesPage() {
   const t = useTranslations("properties");
   const locale = useLocale();
 
   const [type, setType] = useState<PropertyType | "all">("all");
-  const [district, setDistrict] = useState<District | "all">("all");
+  const [district, setDistrict] = useState<string>("all");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
   const [rooms, setRooms] = useState<number | "all">("all");
@@ -93,18 +103,18 @@ export default function PropertiesPage() {
               <label className="font-sans text-xs text-ivory/50 uppercase tracking-wider mb-1.5 block">
                 {t("filter_type")}
               </label>
-              <div className="flex border border-ivory/20">
-                {(["all", "buy", "rent"] as const).map((v) => (
+              <div className="flex flex-wrap border border-ivory/20">
+                {(["all", ...TYPE_OPTIONS] as const).map((v) => (
                   <button
                     key={v}
                     onClick={() => setType(v)}
                     className={cn(
-                      "flex-1 font-sans text-xs font-medium py-2 transition-colors",
+                      "flex-1 font-sans text-xs font-medium py-2 px-2 whitespace-nowrap transition-colors",
                       type === v ? "bg-gold text-ink-950" : "text-ivory hover:bg-ivory/5",
                       v !== "all" && "border-l border-ivory/20"
                     )}
                   >
-                    {v === "all" ? t("filter_any") /* i18n-dup-ok: type/district/rooms/sea all use same label */ : v === "buy" ? t("filter_buy") : t("filter_rent")}
+                    {v === "all" ? t("filter_any") /* i18n-dup-ok: type/district/rooms/sea all use same label */ : t(TYPE_KEY[v])}
                   </button>
                 ))}
               </div>
@@ -117,13 +127,13 @@ export default function PropertiesPage() {
               </label>
               <select
                 value={district}
-                onChange={(e) => setDistrict(e.target.value as District | "all")}
+                onChange={(e) => setDistrict(e.target.value)}
                 className="w-full border border-ivory/20 font-sans text-sm text-ivory py-2 px-3 bg-ink-800 focus:outline-none focus:border-gold"
               >
                 <option value="all">{t("filter_any")}{/* i18n-dup-ok: district select */}</option>
-                {(Object.entries(DISTRICTS) as [District, typeof DISTRICTS[District]][]).map(([key, val]) => (
+                {DISTRICT_OPTIONS.map(({ key, label }) => (
                   <option key={key} value={key}>
-                    {val[locale as keyof typeof val] ?? val.ru}
+                    {label[locale as keyof typeof label] ?? label.ru}
                   </option>
                 ))}
               </select>

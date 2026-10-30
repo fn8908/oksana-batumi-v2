@@ -19,6 +19,15 @@
     "cta_secondary": "Написати у WhatsApp",
     "scroll_hint": "Прокрутіть вниз"
   },
+  "quick_categories": {
+    "items": {
+      "purchase": "Купівля",
+      "sale": "Продаж",
+      "rent": "Оренда",
+      "investment": "Інвестиції"
+    },
+    "cta": "Отримати консультацію"
+  },
   "credibility": {
     "deals": "угод закрито",
     "volume": "млн $ обсяг продажів",
@@ -189,7 +198,9 @@
     "ask_oksana": "Запитати Оксану",
     "details": "Детальніше",
     "per_sqm": "за м²",
-    "monthly": "/міс"
+    "monthly": "/міс",
+    "filter_commercial_buy": "Комерція: купити",
+    "filter_commercial_rent": "Комерція: орендувати"
   },
   "contact": {
     "title": "Зв'яжіться зі мною",
@@ -376,6 +387,8 @@
     "yield_label": "Дохідність / рік",
     "contact_title": "Зацікавилися цим об'єктом?",
     "contact_desc": "Напишіть — відповім протягом години",
-    "telegram_cta": "Написати в Telegram"
+    "telegram_cta": "Написати в Telegram",
+    "type_commercial_buy": "Комерційна, продаж",
+    "type_commercial_rent": "Комерційна, оренда"
   }
 }

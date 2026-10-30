@@ -1,0 +1,6 @@
+{
+  "agentUrl": "",
+  "maxPhotos": 8,
+  "profileDir": "~/.oksana-sync/chrome-profile",
+  "rawDir": "~/.oksana-sync/raw"
+}
