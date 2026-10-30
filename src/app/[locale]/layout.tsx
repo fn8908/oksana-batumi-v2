@@ -9,6 +9,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingContacts } from "@/components/layout/FloatingContacts";
 import { ChatWidget } from "@/components/ui/ChatWidget";
+import { ScrollEffects } from "@/components/layout/ScrollEffects";
 
 type Locale = "ru" | "uk" | "en" | "ka" | "tr" | "he";
 
@@ -81,6 +82,7 @@ export default async function LocaleLayout({
           <Footer />
           <FloatingContacts />
           <ChatWidget />
+          <ScrollEffects />
         </NextIntlClientProvider>
       </body>
     </html>

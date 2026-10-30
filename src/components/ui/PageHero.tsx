@@ -7,10 +7,11 @@ interface PageHeroProps {
 
 export function PageHero({ badge, title, subtitle, withImage = false }: PageHeroProps) {
   return (
-    <section className="relative text-white py-24 overflow-hidden">
+    <section data-no-reveal className="relative text-white py-24 overflow-hidden">
       {withImage && (
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          data-parallax="0.3"
+          className="absolute inset-x-0 top-0 h-[140%] bg-cover bg-center bg-no-repeat will-change-transform"
           style={{ backgroundImage: "url('/images/hero-batumi-panorama.jpg')" }}
         />
       )}

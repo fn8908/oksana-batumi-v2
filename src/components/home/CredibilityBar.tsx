@@ -23,7 +23,7 @@ export function CredibilityBar() {
               key={stat.key}
               className="flex flex-col items-center justify-center py-8 px-4 text-center"
             >
-              <span className="font-serif text-4xl md:text-5xl font-light text-gold [text-shadow:0_0_24px_rgba(212,175,98,0.45)]">
+              <span data-count={stat.value} className="font-serif text-4xl md:text-5xl font-light text-gold [text-shadow:0_0_24px_rgba(212,175,98,0.45)]">
                 {stat.value}
               </span>
               <span className="font-sans text-xs text-ivory/50 mt-2 leading-snug max-w-[140px] uppercase tracking-wider">

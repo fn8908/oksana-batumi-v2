@@ -14,7 +14,7 @@ export function AboutSnippet() {
           {/* Image column */}
           <div className="relative">
             {/* Main photo */}
-            <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden rounded-xl border border-gold/20">
+            <div data-reveal="clip" className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden rounded-xl border border-gold/20">
               <Image
                 src="/images/hero-oksana.png"
                 alt="Яценко Оксана — агент по недвижимости в Батуми"

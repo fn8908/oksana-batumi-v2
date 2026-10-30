@@ -8,12 +8,13 @@ export function FinalCTA() {
 
   return (
     <section
-      className="relative py-24 bg-cover bg-center overflow-hidden"
-      style={{
-        backgroundImage:
-          "url('/images/hero-batumi-panorama.jpg')",
-      }}
+      className="relative py-24 overflow-hidden"
     >
+      <div
+        data-parallax="0.25"
+        className="absolute inset-x-0 -top-1/2 h-[200%] bg-cover bg-center will-change-transform"
+        style={{ backgroundImage: "url('/images/hero-batumi-panorama.jpg')" }}
+      />
       {/* Overlay */}
       <div className="absolute inset-0 bg-ink-950/85" />
       <div className="absolute inset-x-0 top-0 glow-line" />
