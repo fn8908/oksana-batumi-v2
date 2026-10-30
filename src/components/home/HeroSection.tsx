@@ -26,10 +26,10 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-950/10 via-30% to-transparent" />
 
       {/* Content: compact glass panel, bottom right */}
-      <div className="relative z-10 container-site mt-auto pt-[62vh] pb-14 lg:mt-0 lg:pt-0 lg:min-h-screen lg:flex lg:items-end lg:justify-end lg:pb-14">
+      <div className="relative z-10 container-site mt-auto pt-[62vh] pb-14 lg:mt-0 lg:pt-0 lg:min-h-screen lg:flex lg:items-end lg:justify-end lg:pb-10">
         <div className="max-w-[580px] [text-shadow:0_2px_24px_rgba(0,0,0,0.85)]">
           {/* Badge */}
-          <div className="hero-in inline-flex items-center gap-3 mb-5" style={{ animationDelay: "0.15s" }}>
+          <div className="hero-in inline-flex items-center gap-3 mb-3" style={{ animationDelay: "0.15s" }}>
             <span className="w-8 h-px bg-gold" />
             <span className="font-sans text-[10px] font-semibold uppercase tracking-[0.28em] text-gold">
               {t("badge")}
@@ -37,13 +37,13 @@ export function HeroSection() {
           </div>
 
           {/* Title */}
-          <h1 style={{ animationDelay: "0.3s" }} className="hero-in font-serif font-light text-[28px] sm:text-4xl lg:text-[38px] text-ivory leading-[1.12] mb-5 text-balance">
+          <h1 style={{ animationDelay: "0.3s" }} className="hero-in font-serif font-light text-[28px] sm:text-4xl lg:text-[34px] text-ivory leading-[1.12] mb-4 text-balance">
             {t("title")}
           </h1>
           <span className="glow-line line-grow w-32 mb-6" style={{ animationDelay: "0.8s" }} />
 
           {/* Subtitle */}
-          <p style={{ animationDelay: "0.55s" }} className="hero-in font-sans font-light text-sm sm:text-[15px] text-ivory/70 leading-relaxed mb-8">
+          <p style={{ animationDelay: "0.55s" }} className="hero-in font-sans font-light text-sm sm:text-[15px] text-ivory/70 leading-relaxed mb-6">
             {t("subtitle")}
           </p>
 
