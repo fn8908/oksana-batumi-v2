@@ -16,7 +16,7 @@ export function FeaturedProperties() {
   const properties = getFeaturedProperties(tab, 3);
 
   return (
-    <section className="py-20 bg-cream">
+    <section className="py-20 bg-ink-900">
       <div className="container-site">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
@@ -26,14 +26,14 @@ export function FeaturedProperties() {
           </div>
 
           {/* Tabs */}
-          <div className="flex border border-navy/20 self-start">
+          <div className="flex border border-ivory/20 self-start">
             <button
               onClick={() => setTab("buy")}
               className={cn(
                 "font-sans text-sm font-semibold px-6 py-2.5 uppercase tracking-wider transition-colors",
                 tab === "buy"
-                  ? "bg-navy text-white"
-                  : "text-navy hover:bg-navy/5"
+                  ? "bg-gold text-ink-950"
+                  : "text-ivory hover:bg-ivory/5"
               )}
             >
               {t("buy_tab")}
@@ -41,10 +41,10 @@ export function FeaturedProperties() {
             <button
               onClick={() => setTab("rent")}
               className={cn(
-                "font-sans text-sm font-semibold px-6 py-2.5 uppercase tracking-wider transition-colors border-l border-navy/20",
+                "font-sans text-sm font-semibold px-6 py-2.5 uppercase tracking-wider transition-colors border-l border-ivory/20",
                 tab === "rent"
-                  ? "bg-navy text-white"
-                  : "text-navy hover:bg-navy/5"
+                  ? "bg-gold text-ink-950"
+                  : "text-ivory hover:bg-ivory/5"
               )}
             >
               {t("rent_tab")}

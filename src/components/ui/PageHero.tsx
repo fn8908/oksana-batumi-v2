@@ -17,10 +17,12 @@ export function PageHero({ badge, title, subtitle, withImage = false }: PageHero
       <div
         className={`absolute inset-0 ${
           withImage
-            ? "bg-gradient-to-r from-navy/90 via-navy/75 to-navy/50"
-            : "bg-navy"
+            ? "bg-gradient-to-r from-ink-950/90 via-ink-950/75 to-ink-950/50"
+            : "bg-ink-950"
         }`}
       />
+      <div className="absolute inset-x-0 bottom-0 glow-line" />
+      <div className="absolute -left-32 top-0 w-[480px] h-[480px] rounded-full bg-gold/10 blur-[120px] pointer-events-none" />
       <div className="relative z-10 container-site">
         <div className="max-w-3xl">
           {badge && (

@@ -61,7 +61,7 @@ export default async function BlogPage({ params, searchParams }: Props) {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="bg-navy text-white py-24">
+      <section className="bg-ink-950 text-white py-24">
         <div className="container-site text-center">
           <div className="inline-flex items-center gap-2 mb-6">
             <span className="w-8 h-px bg-gold" />
@@ -76,7 +76,7 @@ export default async function BlogPage({ params, searchParams }: Props) {
       </section>
 
       {/* Category filter */}
-      <section className="bg-cream border-b border-navy/10 py-5">
+      <section className="bg-ink-900 border-b border-ivory/10 py-5">
         <div className="container-site">
           <Suspense>
             <CategoryFilter categories={categoryList} active={activeCategory} />
@@ -85,11 +85,11 @@ export default async function BlogPage({ params, searchParams }: Props) {
       </section>
 
       {/* Posts grid */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-ink-900">
         <div className="container-site">
           {posts.length === 0 ? (
             <div className="text-center py-20">
-              <p className="font-sans text-navy/40 text-lg">{t("no_posts")}</p>
+              <p className="font-sans text-ivory/40 text-lg">{t("no_posts")}</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -97,7 +97,7 @@ export default async function BlogPage({ params, searchParams }: Props) {
                 const title = post.title[locale] ?? post.title.ru;
                 const excerpt = post.excerpt[locale] ?? post.excerpt.ru;
                 const catColor =
-                  CATEGORY_COLOR[post.categoryKey] ?? "bg-gray-50 text-gray-600";
+                  CATEGORY_COLOR[post.categoryKey] ?? "bg-ink-900 text-ivory/60";
                 const categoryLabel = t(`categories.${post.categoryKey}`);
                 const dateFormatted = new Date(post.date).toLocaleDateString(
                   locale === "ru" ? "ru-RU" : "en-GB",
@@ -108,11 +108,11 @@ export default async function BlogPage({ params, searchParams }: Props) {
                 return (
                   <article
                     key={post.slug}
-                    className="bg-white flex flex-col overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                    className="bg-ink-800 flex flex-col overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                   >
                     <Link
                       href={postHref}
-                      className="block relative aspect-[16/10] overflow-hidden bg-navy/10"
+                      className="block relative aspect-[16/10] overflow-hidden bg-ivory/10"
                     >
                       <Image
                         src={post.image}
@@ -130,21 +130,21 @@ export default async function BlogPage({ params, searchParams }: Props) {
 
                     <div className="flex flex-col flex-1 p-6">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="font-sans text-xs text-navy/40">{dateFormatted}</span>
-                        <span className="w-1 h-1 bg-navy/20 rounded-full" />
-                        <span className="inline-flex items-center gap-1 font-sans text-xs text-navy/40">
+                        <span className="font-sans text-xs text-ivory/40">{dateFormatted}</span>
+                        <span className="w-1 h-1 bg-ivory/20 rounded-full" />
+                        <span className="inline-flex items-center gap-1 font-sans text-xs text-ivory/40">
                           <Clock size={11} />
                           {post.readTime} {t("min_read")}
                         </span>
                       </div>
 
                       <Link href={postHref}>
-                        <h2 className="font-serif text-xl text-navy leading-snug mb-3 group-hover:text-gold transition-colors duration-200 line-clamp-3">
+                        <h2 className="font-serif text-xl text-ivory leading-snug mb-3 group-hover:text-gold transition-colors duration-200 line-clamp-3">
                           {title}
                         </h2>
                       </Link>
 
-                      <p className="font-sans text-sm text-navy/60 leading-relaxed line-clamp-3 flex-1">
+                      <p className="font-sans text-sm text-ivory/60 leading-relaxed line-clamp-3 flex-1">
                         {excerpt}
                       </p>
 
@@ -168,7 +168,7 @@ export default async function BlogPage({ params, searchParams }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-navy text-white">
+      <section className="py-20 bg-ink-950 text-white">
         <div className="container-site text-center max-w-2xl mx-auto">
           <div className="w-12 h-px bg-gold mx-auto mb-8" />
           <h2 className="font-serif text-4xl text-white mb-4">{t("cta_title")}</h2>

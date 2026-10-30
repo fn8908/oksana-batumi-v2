@@ -46,9 +46,9 @@ export default function PropertiesPage() {
     type !== "all" || district !== "all" || minPrice || maxPrice || rooms !== "all" || seaView;
 
   return (
-    <div className="pt-20 min-h-screen bg-cream">
+    <div className="pt-20 min-h-screen bg-ink-900">
       {/* Header */}
-      <div className="bg-navy text-white py-14">
+      <div className="bg-ink-950 text-white py-14">
         <div className="container-site">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="w-8 h-px bg-gold" />
@@ -63,12 +63,12 @@ export default function PropertiesPage() {
 
       <div className="container-site py-10">
         {/* Filters bar */}
-        <div className="bg-white p-4 md:p-6 mb-8 shadow-sm">
+        <div className="glass-card !overflow-visible p-4 md:p-6 mb-8">
           {/* Mobile toggle */}
           <div className="flex items-center justify-between md:hidden mb-4">
             <button
               onClick={() => setFiltersOpen(!filtersOpen)}
-              className="flex items-center gap-2 font-sans text-sm font-medium text-navy"
+              className="flex items-center gap-2 font-sans text-sm font-medium text-ivory"
             >
               <SlidersHorizontal size={16} />
               {t("filters")}
@@ -79,7 +79,7 @@ export default function PropertiesPage() {
             {hasActiveFilters && (
               <button
                 onClick={resetFilters}
-                className="flex items-center gap-1 font-sans text-xs text-navy/50 hover:text-navy"
+                className="flex items-center gap-1 font-sans text-xs text-ivory/50 hover:text-ivory"
               >
                 <X size={12} />
                 {t("reset")}
@@ -90,18 +90,18 @@ export default function PropertiesPage() {
           <div className={cn("grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4", !filtersOpen && "hidden md:grid")}>
             {/* Type */}
             <div>
-              <label className="font-sans text-xs text-navy/50 uppercase tracking-wider mb-1.5 block">
+              <label className="font-sans text-xs text-ivory/50 uppercase tracking-wider mb-1.5 block">
                 {t("filter_type")}
               </label>
-              <div className="flex border border-navy/20">
+              <div className="flex border border-ivory/20">
                 {(["all", "buy", "rent"] as const).map((v) => (
                   <button
                     key={v}
                     onClick={() => setType(v)}
                     className={cn(
                       "flex-1 font-sans text-xs font-medium py-2 transition-colors",
-                      type === v ? "bg-navy text-white" : "text-navy hover:bg-navy/5",
-                      v !== "all" && "border-l border-navy/20"
+                      type === v ? "bg-gold text-ink-950" : "text-ivory hover:bg-ivory/5",
+                      v !== "all" && "border-l border-ivory/20"
                     )}
                   >
                     {v === "all" ? t("filter_any") /* i18n-dup-ok: type/district/rooms/sea all use same label */ : v === "buy" ? t("filter_buy") : t("filter_rent")}
@@ -112,13 +112,13 @@ export default function PropertiesPage() {
 
             {/* District */}
             <div>
-              <label className="font-sans text-xs text-navy/50 uppercase tracking-wider mb-1.5 block">
+              <label className="font-sans text-xs text-ivory/50 uppercase tracking-wider mb-1.5 block">
                 {t("filter_district")}
               </label>
               <select
                 value={district}
                 onChange={(e) => setDistrict(e.target.value as District | "all")}
-                className="w-full border border-navy/20 font-sans text-sm text-navy py-2 px-3 bg-white focus:outline-none focus:border-gold"
+                className="w-full border border-ivory/20 font-sans text-sm text-ivory py-2 px-3 bg-ink-800 focus:outline-none focus:border-gold"
               >
                 <option value="all">{t("filter_any")}{/* i18n-dup-ok: district select */}</option>
                 {(Object.entries(DISTRICTS) as [District, typeof DISTRICTS[District]][]).map(([key, val]) => (
@@ -131,7 +131,7 @@ export default function PropertiesPage() {
 
             {/* Price min */}
             <div>
-              <label className="font-sans text-xs text-navy/50 uppercase tracking-wider mb-1.5 block">
+              <label className="font-sans text-xs text-ivory/50 uppercase tracking-wider mb-1.5 block">
                 {t("filter_price")} от
               </label>
               <input
@@ -139,13 +139,13 @@ export default function PropertiesPage() {
                 value={minPrice}
                 onChange={(e) => setMinPrice(e.target.value)}
                 placeholder="$ от"
-                className="w-full border border-navy/20 font-sans text-sm text-navy py-2 px-3 focus:outline-none focus:border-gold"
+                className="w-full border border-ivory/20 font-sans text-sm text-ivory py-2 px-3 focus:outline-none focus:border-gold"
               />
             </div>
 
             {/* Price max */}
             <div>
-              <label className="font-sans text-xs text-navy/50 uppercase tracking-wider mb-1.5 block">
+              <label className="font-sans text-xs text-ivory/50 uppercase tracking-wider mb-1.5 block">
                 {t("filter_price")}{/* i18n-dup-ok: min/max price labels */} до
               </label>
               <input
@@ -153,21 +153,21 @@ export default function PropertiesPage() {
                 value={maxPrice}
                 onChange={(e) => setMaxPrice(e.target.value)}
                 placeholder="$ до"
-                className="w-full border border-navy/20 font-sans text-sm text-navy py-2 px-3 focus:outline-none focus:border-gold"
+                className="w-full border border-ivory/20 font-sans text-sm text-ivory py-2 px-3 focus:outline-none focus:border-gold"
               />
             </div>
 
             {/* Rooms */}
             <div>
-              <label className="font-sans text-xs text-navy/50 uppercase tracking-wider mb-1.5 block">
+              <label className="font-sans text-xs text-ivory/50 uppercase tracking-wider mb-1.5 block">
                 {t("filter_rooms")}
               </label>
-              <div className="flex border border-navy/20">
+              <div className="flex border border-ivory/20">
                 <button
                   onClick={() => setRooms("all")}
                   className={cn(
                     "flex-1 font-sans text-xs font-medium py-2 transition-colors",
-                    rooms === "all" ? "bg-navy text-white" : "text-navy hover:bg-navy/5"
+                    rooms === "all" ? "bg-gold text-ink-950" : "text-ivory hover:bg-ivory/5"
                   )}
                 >
                   {t("filter_any")}{/* i18n-dup-ok: rooms filter */}
@@ -177,8 +177,8 @@ export default function PropertiesPage() {
                     key={r}
                     onClick={() => setRooms(r)}
                     className={cn(
-                      "flex-1 font-sans text-xs font-medium py-2 border-l border-navy/20 transition-colors",
-                      rooms === r ? "bg-navy text-white" : "text-navy hover:bg-navy/5"
+                      "flex-1 font-sans text-xs font-medium py-2 border-l border-ivory/20 transition-colors",
+                      rooms === r ? "bg-gold text-ink-950" : "text-ivory hover:bg-ivory/5"
                     )}
                   >
                     {r}+
@@ -189,7 +189,7 @@ export default function PropertiesPage() {
 
             {/* Sea view */}
             <div>
-              <label className="font-sans text-xs text-navy/50 uppercase tracking-wider mb-1.5 block">
+              <label className="font-sans text-xs text-ivory/50 uppercase tracking-wider mb-1.5 block">
                 {t("filter_sea_view")}
               </label>
               <button
@@ -197,8 +197,8 @@ export default function PropertiesPage() {
                 className={cn(
                   "w-full border font-sans text-xs font-medium py-2 transition-colors",
                   seaView
-                    ? "bg-navy text-white border-navy"
-                    : "border-navy/20 text-navy hover:bg-navy/5"
+                    ? "bg-gold text-ink-950 border-gold/50"
+                    : "border-ivory/20 text-ivory hover:bg-ivory/5"
                 )}
               >
                 {seaView ? t("filter_yes") : t("filter_any") /* i18n-dup-ok: sea view toggle */}
@@ -207,14 +207,14 @@ export default function PropertiesPage() {
           </div>
 
           {/* Results count + reset */}
-          <div className="hidden md:flex items-center justify-between mt-4 pt-4 border-t border-navy/10">
-            <span className="font-sans text-sm text-navy/50">
-              {t("found_prefix")} <strong className="text-navy">{filtered.length}</strong> {t("found_suffix")}
+          <div className="hidden md:flex items-center justify-between mt-4 pt-4 border-t border-ivory/10">
+            <span className="font-sans text-sm text-ivory/50">
+              {t("found_prefix")} <strong className="text-ivory">{filtered.length}</strong> {t("found_suffix")}
             </span>
             {hasActiveFilters && (
               <button
                 onClick={resetFilters}
-                className="flex items-center gap-1 font-sans text-xs text-navy/50 hover:text-navy transition-colors"
+                className="flex items-center gap-1 font-sans text-xs text-ivory/50 hover:text-ivory transition-colors"
               >
                 <X size={12} />
                 {t("reset_filters")}
@@ -232,8 +232,8 @@ export default function PropertiesPage() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <div className="font-serif text-2xl text-navy/30 mb-3">{t("no_objects")}</div>
-            <p className="font-sans text-sm text-navy/40 mb-6">{t("no_results")}</p>
+            <div className="font-serif text-2xl text-ivory/30 mb-3">{t("no_objects")}</div>
+            <p className="font-sans text-sm text-ivory/40 mb-6">{t("no_results")}</p>
             <button onClick={resetFilters} className="btn-secondary">
               {t("reset_filters")}{/* i18n-dup-ok: empty-state reset button */}
             </button>

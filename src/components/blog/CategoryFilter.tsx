@@ -36,8 +36,8 @@ export default function CategoryFilter({ categories, active }: Props) {
             onClick={() => setCategory(key)}
             className={`font-sans text-sm font-medium px-4 py-2 transition-all duration-200 border ${
               isActive
-                ? "bg-navy text-white border-navy"
-                : "bg-white text-navy/60 border-navy/20 hover:border-navy/50 hover:text-navy"
+                ? "bg-gold text-ink-950 border-gold/50"
+                : "bg-ink-800 text-ivory/60 border-ivory/20 hover:border-ivory/50 hover:text-ivory"
             }`}
           >
             {label}

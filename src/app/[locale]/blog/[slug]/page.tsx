@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const title = post.title[locale] ?? post.title.ru;
   const excerpt = post.excerpt[locale] ?? post.excerpt.ru;
-  const catColor = CATEGORY_COLOR[post.categoryKey] ?? "bg-gray-50 text-gray-600";
+  const catColor = CATEGORY_COLOR[post.categoryKey] ?? "bg-ink-900 text-ivory/60";
   const categoryLabel = t(`categories.${post.categoryKey}`);
 
   const dateFormatted = new Date(post.date).toLocaleDateString(
@@ -86,7 +86,7 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="bg-navy text-white py-16">
+      <section className="bg-ink-950 text-white py-16">
         <div className="container-site max-w-4xl">
           <Link
             href={blogHref}
@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: Props) {
       </section>
 
       {/* Cover image */}
-      <div className="relative w-full aspect-[21/9] bg-navy/10 overflow-hidden">
+      <div className="relative w-full aspect-[21/9] bg-ivory/10 overflow-hidden">
         <Image
           src={post.image}
           alt={title}
@@ -127,11 +127,11 @@ export default async function BlogPostPage({ params }: Props) {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink-950/30 to-transparent" />
       </div>
 
       {/* Article body */}
-      <section className="py-16 bg-cream">
+      <section className="py-16 bg-ink-900">
         <div className="container-site">
           <div className="max-w-3xl mx-auto">
             <div className="w-12 h-0.5 bg-gold mb-10" />
@@ -146,7 +146,7 @@ export default async function BlogPostPage({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-navy text-white">
+      <section className="py-16 bg-ink-950 text-white">
         <div className="container-site text-center max-w-2xl mx-auto">
           <div className="w-12 h-px bg-gold mx-auto mb-8" />
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
@@ -169,27 +169,27 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Related posts */}
       {suggestedPosts.length > 0 && (
-        <section className="py-16 bg-cream">
+        <section className="py-16 bg-ink-900">
           <div className="container-site">
             <div className="flex items-center gap-3 mb-10">
               <span className="w-8 h-px bg-gold" />
-              <h2 className="font-serif text-2xl text-navy">{t("related")}</h2>
+              <h2 className="font-serif text-2xl text-ivory">{t("related")}</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {suggestedPosts.map((rel) => {
                 const relTitle = rel.title[locale] ?? rel.title.ru;
                 const relExcerpt = rel.excerpt[locale] ?? rel.excerpt.ru;
                 const relCatColor =
-                  CATEGORY_COLOR[rel.categoryKey] ?? "bg-gray-50 text-gray-600";
+                  CATEGORY_COLOR[rel.categoryKey] ?? "bg-ink-900 text-ivory/60";
                 const relHref = `/${locale}/blog/${rel.slug}`;
 
                 return (
                   <Link
                     key={rel.slug}
                     href={relHref}
-                    className="group bg-white overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                    className="group bg-ink-800 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                   >
-                    <div className="relative aspect-[16/10] overflow-hidden bg-navy/10">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-ivory/10">
                       <Image
                         src={rel.image}
                         alt={relTitle}
@@ -204,10 +204,10 @@ export default async function BlogPostPage({ params }: Props) {
                       </span>
                     </div>
                     <div className="p-5 flex-1 flex flex-col">
-                      <h3 className="font-serif text-base text-navy leading-snug mb-2 group-hover:text-gold transition-colors line-clamp-2">
+                      <h3 className="font-serif text-base text-ivory leading-snug mb-2 group-hover:text-gold transition-colors line-clamp-2">
                         {relTitle}
                       </h3>
-                      <p className="font-sans text-sm text-navy/50 line-clamp-2 flex-1">
+                      <p className="font-sans text-sm text-ivory/50 line-clamp-2 flex-1">
                         {relExcerpt}
                       </p>
                     </div>

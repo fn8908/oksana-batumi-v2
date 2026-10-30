@@ -8,13 +8,13 @@ export function AboutSnippet() {
   const locale = useLocale();
 
   return (
-    <section className="py-20 bg-[#F8F7F5]">
+    <section className="py-20 bg-ink-900">
       <div className="container-site">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image column */}
           <div className="relative">
             {/* Main photo */}
-            <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
+            <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden rounded-xl border border-gold/20">
               <Image
                 src="/images/hero-oksana.png"
                 alt="Яценко Оксана — агент по недвижимости в Батуми"
@@ -25,9 +25,9 @@ export function AboutSnippet() {
               />
             </div>
             {/* Gold accent frame */}
-            <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 border-2 border-gold -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 border border-gold/60 rounded-xl -z-10 shadow-[0_0_30px_-5px_rgba(212,175,98,0.5)]" />
             {/* Floating stats card */}
-            <div className="absolute -bottom-6 left-6 bg-[#1A1A1A] text-white px-6 py-4 shadow-xl">
+            <div className="absolute -bottom-6 left-6 glass-card px-6 py-4">
               <div className="font-serif text-3xl font-semibold text-gold">3+</div>
               <div className="font-sans text-xs text-white/70 mt-0.5 uppercase tracking-wider">
                 {t("years_label")}
@@ -44,37 +44,37 @@ export function AboutSnippet() {
               </span>
             </div>
             <h2 className="section-title mb-6">{t("title")}</h2>
-            <p className="font-sans text-base text-navy/70 leading-relaxed mb-8">
+            <p className="font-sans text-base text-ivory/70 leading-relaxed mb-8">
               {t("text")}
             </p>
 
             {/* Feature icons */}
             <div className="flex flex-col gap-4 mb-8">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cream flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-md border border-gold/40 bg-ink-800 flex items-center justify-center flex-shrink-0">
                   <MapPin size={18} className="text-gold" />
                 </div>
                 <div>
-                  <div className="font-sans font-semibold text-sm text-navy">{t("fact1_title")}</div>
-                  <div className="font-sans text-xs text-navy/60 mt-0.5">{t("fact1_desc")}</div>
+                  <div className="font-sans font-semibold text-sm text-ivory">{t("fact1_title")}</div>
+                  <div className="font-sans text-xs text-ivory/60 mt-0.5">{t("fact1_desc")}</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cream flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-md border border-gold/40 bg-ink-800 flex items-center justify-center flex-shrink-0">
                   <Users size={18} className="text-gold" />
                 </div>
                 <div>
-                  <div className="font-sans font-semibold text-sm text-navy">{t("fact2_title")}</div>
-                  <div className="font-sans text-xs text-navy/60 mt-0.5">{t("fact2_desc")}</div>
+                  <div className="font-sans font-semibold text-sm text-ivory">{t("fact2_title")}</div>
+                  <div className="font-sans text-xs text-ivory/60 mt-0.5">{t("fact2_desc")}</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cream flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-md border border-gold/40 bg-ink-800 flex items-center justify-center flex-shrink-0">
                   <Award size={18} className="text-gold" />
                 </div>
                 <div>
-                  <div className="font-sans font-semibold text-sm text-navy">{t("fact3_title")}</div>
-                  <div className="font-sans text-xs text-navy/60 mt-0.5">{t("fact3_desc")}</div>
+                  <div className="font-sans font-semibold text-sm text-ivory">{t("fact3_title")}</div>
+                  <div className="font-sans text-xs text-ivory/60 mt-0.5">{t("fact3_desc")}</div>
                 </div>
               </div>
             </div>

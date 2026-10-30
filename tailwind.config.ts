@@ -9,6 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        ink: {
+          DEFAULT: "#0E0C0A",
+          700: "#221D17",
+          800: "#16130F",
+          900: "#0E0C0A",
+          950: "#080706",
+        },
+        ivory: "#F3EBDD",
         navy: {
           DEFAULT: "#1B2B4B",
           50: "#f0f4fb",
@@ -24,7 +32,7 @@ const config: Config = {
           950: "#111b30",
         },
         gold: {
-          DEFAULT: "#C9A84C",
+          DEFAULT: "#D4AF62",
           50: "#fdf9ed",
           100: "#f9f0d0",
           200: "#f2dfa0",

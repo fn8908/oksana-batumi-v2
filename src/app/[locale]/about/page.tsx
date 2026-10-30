@@ -24,7 +24,7 @@ export default function AboutPage() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/hero-batumi-panorama.jpg')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/75 to-navy/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-950/90 via-ink-950/75 to-ink-950/50" />
         <div className="relative z-10 container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -77,9 +77,9 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-cream border-b border-navy/10">
+      <section className="bg-ink-900 border-b border-ivory/10">
         <div className="container-site">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-navy/10">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-ivory/10">
             {[
               { value: "50+", label: t("stat_deals") },
               { value: "$15M+", label: t("stat_volume") },
@@ -88,7 +88,7 @@ export default function AboutPage() {
             ].map((s) => (
               <div key={s.label} className="py-10 px-6 text-center">
                 <div className="font-serif text-4xl text-gold font-semibold">{s.value}</div>
-                <div className="font-sans text-xs text-navy/50 mt-2 uppercase tracking-wider">{s.label}</div>
+                <div className="font-sans text-xs text-ivory/50 mt-2 uppercase tracking-wider">{s.label}</div>
               </div>
             ))}
           </div>
@@ -96,20 +96,20 @@ export default function AboutPage() {
       </section>
 
       {/* Story + Approach */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-ink-800">
         <div className="container-site">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Story */}
             <div>
-              <h2 className="font-serif text-3xl text-navy mb-6 gold-line">{t("story_title")}</h2>
-              <p className="font-sans text-navy/70 leading-relaxed mb-4">{t("story_p1")}</p>
-              <p className="font-sans text-navy/70 leading-relaxed mb-4">{t("story_p2")}</p>
-              <p className="font-sans text-navy/70 leading-relaxed">{t("story_p3")}</p>
+              <h2 className="font-serif text-3xl text-ivory mb-6 gold-line">{t("story_title")}</h2>
+              <p className="font-sans text-ivory/70 leading-relaxed mb-4">{t("story_p1")}</p>
+              <p className="font-sans text-ivory/70 leading-relaxed mb-4">{t("story_p2")}</p>
+              <p className="font-sans text-ivory/70 leading-relaxed">{t("story_p3")}</p>
             </div>
 
             {/* Approach */}
             <div>
-              <h2 className="font-serif text-3xl text-navy mb-6 gold-line">{t("approach_title")}</h2>
+              <h2 className="font-serif text-3xl text-ivory mb-6 gold-line">{t("approach_title")}</h2>
               <div className="space-y-4">
                 {([
                   t("approach_1"),
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 ]).map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle size={16} className="text-gold mt-0.5 flex-shrink-0" />
-                    <span className="font-sans text-sm text-navy/70">{item}</span>
+                    <span className="font-sans text-sm text-ivory/70">{item}</span>
                   </div>
                 ))}
               </div>
@@ -131,10 +131,10 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-cream">
+      <section className="py-16 bg-ink-900">
         <div className="container-site text-center">
-          <h3 className="font-serif text-3xl text-navy mb-4">{t("cta_bottom_title")}</h3>
-          <p className="font-sans text-navy/60 mb-8 max-w-md mx-auto">
+          <h3 className="font-serif text-3xl text-ivory mb-4">{t("cta_bottom_title")}</h3>
+          <p className="font-sans text-ivory/60 mb-8 max-w-md mx-auto">
             {t("cta_bottom_text")}
           </p>
           <div className="flex flex-wrap justify-center gap-3">

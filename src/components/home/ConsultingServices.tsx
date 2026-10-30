@@ -25,7 +25,7 @@ export function ConsultingServices() {
   const locale = useLocale();
 
   return (
-    <section className="py-20 bg-white border-t border-gray-100">
+    <section className="py-20 bg-ink-900 border-t border-gold/10">
       <div className="container-site">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
@@ -36,16 +36,16 @@ export function ConsultingServices() {
                 {t("badge")}
               </span>
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl text-ivory leading-tight">
               {t("title")}
             </h2>
-            <p className="font-sans text-base text-gray-600 mt-3 max-w-2xl">
+            <p className="font-sans text-base text-ivory/60 mt-3 max-w-2xl">
               {t("subtitle")}
             </p>
           </div>
           <Link
             href={`/${locale}/contact`}
-            className="inline-flex items-center gap-2 font-sans text-sm text-[#1A1A1A] hover:text-gold-500 transition-colors group flex-shrink-0"
+            className="inline-flex items-center gap-2 font-sans text-sm text-ivory hover:text-gold-500 transition-colors group flex-shrink-0"
           >
             {t("cta")}
             <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
@@ -53,12 +53,12 @@ export function ConsultingServices() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {CONSULTING_SERVICES.map(({ key, icon: Icon, image }) => (
             <Link
               key={key}
               href={`/${locale}/contact`}
-              className="group relative bg-white overflow-hidden flex flex-col"
+              className="glass-card group flex flex-col hover:-translate-y-1"
             >
               {/* Image */}
               <div className="relative h-52 overflow-hidden">
@@ -66,19 +66,19 @@ export function ConsultingServices() {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url('${image}')` }}
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
-                <div className="absolute top-4 left-4 w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/30 flex items-center justify-center">
-                  <Icon size={18} className="text-white" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-950/20 to-transparent transition-colors duration-300" />
+                <div className="absolute top-4 left-4 w-10 h-10 rounded-md bg-ink-950/50 backdrop-blur-sm border border-gold/50 flex items-center justify-center">
+                  <Icon size={18} className="text-gold" />
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-5 flex flex-col justify-between flex-grow">
                 <div>
-                  <h3 className="font-serif text-lg text-[#1A1A1A] group-hover:text-gold-500 transition-colors">
+                  <h3 className="font-serif text-lg text-ivory group-hover:text-gold-500 transition-colors">
                     {t(`items.${key}.title`)}
                   </h3>
-                  <p className="font-sans text-sm text-gray-600 mt-2 leading-relaxed">
+                  <p className="font-sans text-sm text-ivory/60 mt-2 leading-relaxed">
                     {t(`items.${key}.desc`)}
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export function ConsultingServices() {
                   </span>
                   <ArrowRight
                     size={16}
-                    className="text-gray-300 group-hover:text-gold-500 group-hover:translate-x-1 transition-all flex-shrink-0"
+                    className="text-ivory/30 group-hover:text-gold-500 group-hover:translate-x-1 transition-all flex-shrink-0"
                   />
                 </div>
               </div>

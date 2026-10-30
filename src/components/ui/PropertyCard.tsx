@@ -41,13 +41,13 @@ export function PropertyCard({ property, locale }: PropertyCardProps) {
             </span>
           )}
           {property.seaView && (
-            <span className="flex items-center gap-1 bg-navy text-white font-sans text-xs font-semibold px-2 py-0.5">
+            <span className="flex items-center gap-1 bg-ink-950 text-white font-sans text-xs font-semibold px-2 py-0.5">
               <Waves size={10} />
               {t("sea_view")}
             </span>
           )}
           {property.isNewBuild && (
-            <span className="flex items-center gap-1 bg-gold text-white font-sans text-xs font-semibold px-2 py-0.5">
+            <span className="flex items-center gap-1 bg-gold text-ink-950 font-sans text-xs font-semibold px-2 py-0.5">
               <Building2 size={10} />
               {t("new_build")}
             </span>
@@ -61,7 +61,7 @@ export function PropertyCard({ property, locale }: PropertyCardProps) {
         </div>
         {/* Yield badge */}
         {property.yield && (
-          <div className="absolute top-3 right-3 bg-navy/90 text-gold font-sans text-xs font-semibold px-2 py-0.5">
+          <div className="absolute top-3 right-3 bg-ink-950/90 text-gold font-sans text-xs font-semibold px-2 py-0.5">
             ~{property.yield}% / год
           </div>
         )}
@@ -72,32 +72,32 @@ export function PropertyCard({ property, locale }: PropertyCardProps) {
         <p className="font-sans text-xs text-gold uppercase tracking-wider mb-1">
           {district}
         </p>
-        <h3 className="font-serif text-lg text-navy leading-snug mb-3 line-clamp-2">
+        <h3 className="font-serif text-lg text-ivory leading-snug mb-3 line-clamp-2">
           {title}
         </h3>
 
         {/* Stats row */}
-        <div className="flex items-center gap-3 font-sans text-xs text-navy/60 mb-4">
+        <div className="flex items-center gap-3 font-sans text-xs text-ivory/60 mb-4">
           <span>{property.area} {t("sqm")}</span>
-          <span className="w-px h-3 bg-navy/20" />
+          <span className="w-px h-3 bg-ivory/20" />
           <span>{property.rooms} {t("rooms")}</span>
-          <span className="w-px h-3 bg-navy/20" />
+          <span className="w-px h-3 bg-ivory/20" />
           <span>{property.floor}/{property.totalFloors} {t("floor")}</span>
         </div>
 
         {/* Price + CTA */}
         <div className="flex items-center justify-between">
           <div>
-            <div className="font-serif text-xl font-semibold text-navy">
+            <div className="font-serif text-xl font-semibold text-ivory">
               {formatPrice(property.price)}
               {property.type === "rent" && (
-                <span className="font-sans text-xs text-navy/50 font-normal ml-1">
+                <span className="font-sans text-xs text-ivory/50 font-normal ml-1">
                   {t("monthly" as never) ?? "/мес"}
                 </span>
               )}
             </div>
             {property.pricePerSqm && (
-              <div className="font-sans text-xs text-navy/50">
+              <div className="font-sans text-xs text-ivory/50">
                 {formatPrice(property.pricePerSqm)} {t("per_sqm" as never) ?? "за м²"}
               </div>
             )}

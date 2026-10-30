@@ -23,7 +23,7 @@ export default function ContactPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="bg-navy text-white py-20">
+      <section className="bg-ink-950 text-white py-20">
         <div className="container-site text-center">
           <h1 className="font-serif text-5xl text-white mb-4 gold-line">{t("title")}</h1>
           <p className="font-sans text-white/60 text-lg flex items-center justify-center gap-2">
@@ -34,7 +34,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Options */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-ink-900">
         <div className="container-site">
           <div className="max-w-2xl mx-auto space-y-6">
             {/* WhatsApp */}
@@ -43,7 +43,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={whatsappAria}
-              className="flex items-center gap-6 bg-white border border-navy/10 p-8 hover:border-gold hover:shadow-lg transition-all group"
+              className="flex items-center gap-6 glass-card p-8 group"
             >
               <div className="w-16 h-16 bg-[#25D366] flex items-center justify-center flex-shrink-0">
                 <MessageCircle size={28} className="text-white" />
@@ -52,10 +52,10 @@ export default function ContactPage() {
                 <div className="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-1">
                   WhatsApp
                 </div>
-                <div className="font-serif text-2xl text-navy">+995 591 025 632</div>
-                <div className="font-sans text-sm text-navy/50 mt-1">{t("whatsapp_desc")}</div>
+                <div className="font-serif text-2xl text-ivory">+995 591 025 632</div>
+                <div className="font-sans text-sm text-ivory/50 mt-1">{t("whatsapp_desc")}</div>
               </div>
-              <div className="text-navy/30 group-hover:text-gold transition-colors">→</div>
+              <div className="text-ivory/30 group-hover:text-gold transition-colors">→</div>
             </a>
 
             {/* Telegram */}
@@ -64,7 +64,7 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={telegramAria}
-              className="flex items-center gap-6 bg-white border border-navy/10 p-8 hover:border-gold hover:shadow-lg transition-all group"
+              className="flex items-center gap-6 glass-card p-8 group"
             >
               <div className="w-16 h-16 bg-[#229ED9] flex items-center justify-center flex-shrink-0">
                 <Send size={28} className="text-white" />
@@ -73,23 +73,23 @@ export default function ContactPage() {
                 <div className="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-1">
                   Telegram
                 </div>
-                <div className="font-serif text-2xl text-navy">@Oksana_Iatsenko</div>
-                <div className="font-sans text-sm text-navy/50 mt-1">{t("telegram_desc")}</div>
+                <div className="font-serif text-2xl text-ivory">@Oksana_Iatsenko</div>
+                <div className="font-sans text-sm text-ivory/50 mt-1">{t("telegram_desc")}</div>
               </div>
-              <div className="text-navy/30 group-hover:text-gold transition-colors">→</div>
+              <div className="text-ivory/30 group-hover:text-gold transition-colors">→</div>
             </a>
 
             {/* Location */}
-            <div className="flex items-center gap-6 bg-white border border-navy/10 p-8">
-              <div className="w-16 h-16 bg-navy flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-6 glass-card p-8">
+              <div className="w-16 h-16 bg-ink-950 flex items-center justify-center flex-shrink-0">
                 <MapPin size={28} className="text-gold" />
               </div>
               <div className="flex-1">
                 <div className="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-1">
                   {t("location_label")}
                 </div>
-                <div className="font-serif text-2xl text-navy">{t("location_city")}</div>
-                <div className="font-sans text-sm text-navy/50 mt-1">
+                <div className="font-serif text-2xl text-ivory">{t("location_city")}</div>
+                <div className="font-sans text-sm text-ivory/50 mt-1">
                   {t("location_desc")}
                 </div>
               </div>
@@ -98,11 +98,11 @@ export default function ContactPage() {
 
           {/* Divider with text */}
           <div className="max-w-2xl mx-auto mt-12 text-center">
-            <p className="font-sans text-navy/40 text-sm uppercase tracking-widest">{t("or_directly")}</p>
+            <p className="font-sans text-ivory/40 text-sm uppercase tracking-widest">{t("or_directly")}</p>
           </div>
 
           {/* Quick message via WhatsApp */}
-          <div className="max-w-2xl mx-auto mt-8 bg-navy text-white p-10 text-center">
+          <div className="max-w-2xl mx-auto mt-8 bg-ink-950 text-white p-10 text-center">
             <h2 className="font-serif text-3xl mb-3">{t("cta_title")}</h2>
             <p className="font-sans text-white/60 mb-8 text-sm">{t("cta_desc")}</p>
             <a

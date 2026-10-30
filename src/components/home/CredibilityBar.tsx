@@ -12,21 +12,21 @@ export function CredibilityBar() {
   const t = useTranslations("credibility");
 
   return (
-    <section className="bg-white border-y border-gray-100">
+    <section className="relative bg-ink-950 border-y border-gold/15">
       <div className="container-site">
         <p className="font-sans text-xs font-semibold uppercase tracking-widest text-center text-gold pt-6 pb-0">
           {t("heading")}
         </p>
-        <div className="grid grid-cols-3 divide-x divide-gray-100">
+        <div className="grid grid-cols-3 divide-x divide-gold/15">
           {STATS.map((stat) => (
             <div
               key={stat.key}
               className="flex flex-col items-center justify-center py-8 px-4 text-center"
             >
-              <span className="font-serif text-3xl md:text-4xl font-light text-gold">
+              <span className="font-serif text-4xl md:text-5xl font-light text-gold [text-shadow:0_0_24px_rgba(212,175,98,0.45)]">
                 {stat.value}
               </span>
-              <span className="font-sans text-xs text-gray-400 mt-2 leading-snug max-w-[140px] uppercase tracking-wider">
+              <span className="font-sans text-xs text-ivory/50 mt-2 leading-snug max-w-[140px] uppercase tracking-wider">
                 {t(stat.key)}
               </span>
               {stat.hasSub && (

@@ -52,13 +52,13 @@ export default function BatumiPage() {
       />
 
       {/* Stats */}
-      <section className="bg-white border-b border-navy/10">
+      <section className="bg-ink-800 border-b border-ivory/10">
         <div className="container-site">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-navy/10">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-ivory/10">
             {facts.map((f, i) => (
               <div key={i} className="py-10 px-6 text-center">
                 <div className="font-serif text-4xl text-gold font-semibold">{f.value}</div>
-                <div className="font-sans text-xs text-navy/50 mt-2 uppercase tracking-wider leading-tight">
+                <div className="font-sans text-xs text-ivory/50 mt-2 uppercase tracking-wider leading-tight">
                   {f.label}
                 </div>
               </div>
@@ -68,14 +68,14 @@ export default function BatumiPage() {
       </section>
 
       {/* City overview */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-ink-900">
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="font-serif text-4xl text-navy mb-6 gold-line">{t("city_title")}</h2>
-              <p className="font-sans text-navy/70 leading-relaxed text-base">{t("city_text")}</p>
+              <h2 className="font-serif text-4xl text-ivory mb-6 gold-line">{t("city_title")}</h2>
+              <p className="font-sans text-ivory/70 leading-relaxed text-base">{t("city_text")}</p>
             </div>
-            <div className="bg-navy text-white p-10">
+            <div className="bg-ink-950 text-white p-10">
               <div className="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-6">
                 {t("facts_title")}
               </div>
@@ -95,10 +95,10 @@ export default function BatumiPage() {
       </section>
 
       {/* Districts */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-ink-800">
         <div className="container-site">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-4xl text-navy mb-4 gold-line inline-block">
+            <h2 className="font-serif text-4xl text-ivory mb-4 gold-line inline-block">
               {t("districts_title")}
             </h2>
           </div>
@@ -106,14 +106,14 @@ export default function BatumiPage() {
             {districts.map((d, i) => (
               <div
                 key={i}
-                className="flex gap-5 p-8 border border-navy/10 hover:border-gold hover:shadow-md transition-all"
+                className="flex gap-5 p-8 border border-ivory/10 hover:border-gold hover:shadow-md transition-all"
               >
                 <div className="w-10 h-10 bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <MapPin size={18} className="text-gold" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl text-navy mb-2">{d.name}</h3>
-                  <p className="font-sans text-sm text-navy/60 leading-relaxed">{d.desc}</p>
+                  <h3 className="font-serif text-xl text-ivory mb-2">{d.name}</h3>
+                  <p className="font-sans text-sm text-ivory/60 leading-relaxed">{d.desc}</p>
                 </div>
               </div>
             ))}
@@ -122,7 +122,7 @@ export default function BatumiPage() {
       </section>
 
       {/* Why Batumi */}
-      <section className="py-20 bg-navy text-white">
+      <section className="py-20 bg-ink-950 text-white">
         <div className="container-site">
           <div className="text-center mb-12">
             <h2 className="font-serif text-4xl text-white mb-4">{t("why_title")}</h2>
@@ -140,10 +140,10 @@ export default function BatumiPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-ink-900">
         <div className="container-site text-center">
-          <h2 className="font-serif text-4xl text-navy mb-4">{t("cta_title")}</h2>
-          <p className="font-sans text-navy/60 mb-8 max-w-md mx-auto">{t("cta_text")}</p>
+          <h2 className="font-serif text-4xl text-ivory mb-4">{t("cta_title")}</h2>
+          <p className="font-sans text-ivory/60 mb-8 max-w-md mx-auto">{t("cta_text")}</p>
           <a
             href={getWhatsAppLink(whatsappMsg)}
             target="_blank"

@@ -67,15 +67,15 @@ export function ChatWidget() {
     <div className="fixed bottom-6 right-4 z-50 flex flex-col items-end gap-2">
       {/* Диалоговое окно */}
       {(state === "open" || state === "loading" || state === "error" || state === "success") && (
-        <div className="w-[320px] sm:w-[360px] bg-white shadow-2xl border border-navy/10 flex flex-col overflow-hidden animate-slide-up">
+        <div className="w-[320px] sm:w-[360px] bg-ink-800 shadow-2xl border border-gold/30 rounded-xl flex flex-col overflow-hidden animate-slide-up">
           {/* Шапка */}
-          <div className="bg-navy px-5 py-4 flex items-center justify-between flex-shrink-0">
+          <div className="bg-ink-950 px-5 py-4 flex items-center justify-between flex-shrink-0">
             <div className="flex items-center gap-3">
               <div className="relative">
                 <div className="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center">
                   <MessageCircle size={16} className="text-gold" />
                 </div>
-                <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-navy" />
+                <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-gold/50" />
               </div>
               <div>
                 <div className="font-serif text-sm font-semibold text-white">Оксана Яценко</div>
@@ -96,13 +96,13 @@ export function ChatWidget() {
             {state === "success" ? (
               <div className="flex flex-col items-center justify-center gap-3 py-10 px-6 text-center">
                 <CheckCircle size={40} className="text-green-500" />
-                <p className="font-serif text-lg text-navy">{t("success_title")}</p>
-                <p className="font-sans text-sm text-navy/60">{t("success_desc")}</p>
+                <p className="font-serif text-lg text-ivory">{t("success_title")}</p>
+                <p className="font-sans text-sm text-ivory/60">{t("success_desc")}</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="p-5 flex flex-col gap-4">
                 {/* Приветственное сообщение */}
-                <div className="bg-cream px-4 py-3 text-sm font-sans text-navy/70 leading-relaxed">
+                <div className="bg-ink-900 px-4 py-3 text-sm font-sans text-ivory/70 leading-relaxed">
                   {t("greeting")}
                 </div>
 
@@ -112,14 +112,14 @@ export function ChatWidget() {
                     placeholder={t("placeholder_name")}
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full border border-navy/20 px-3 py-2.5 font-sans text-sm text-navy placeholder:text-navy/30 focus:outline-none focus:border-gold transition-colors"
+                    className="w-full border border-ivory/20 px-3 py-2.5 font-sans text-sm text-ivory placeholder:text-ivory/30 focus:outline-none focus:border-gold transition-colors"
                   />
                   <input
                     type="tel"
                     placeholder={t("placeholder_phone")}
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    className="w-full border border-navy/20 px-3 py-2.5 font-sans text-sm text-navy placeholder:text-navy/30 focus:outline-none focus:border-gold transition-colors"
+                    className="w-full border border-ivory/20 px-3 py-2.5 font-sans text-sm text-ivory placeholder:text-ivory/30 focus:outline-none focus:border-gold transition-colors"
                   />
                   <textarea
                     ref={inputRef}
@@ -128,7 +128,7 @@ export function ChatWidget() {
                     onChange={(e) => setMessage(e.target.value)}
                     rows={3}
                     required
-                    className="w-full border border-navy/20 px-3 py-2.5 font-sans text-sm text-navy placeholder:text-navy/30 focus:outline-none focus:border-gold transition-colors resize-none"
+                    className="w-full border border-ivory/20 px-3 py-2.5 font-sans text-sm text-ivory placeholder:text-ivory/30 focus:outline-none focus:border-gold transition-colors resize-none"
                   />
                 </div>
 
@@ -140,7 +140,7 @@ export function ChatWidget() {
                   type="submit"
                   disabled={state === "loading" || !message.trim()}
                   className={cn(
-                    "w-full bg-gold text-white font-sans text-sm font-semibold uppercase tracking-wider py-3 flex items-center justify-center gap-2 transition-opacity",
+                    "w-full btn-primary justify-center bg-gold text-ink-950 font-sans text-sm font-semibold uppercase tracking-wider py-3 flex items-center justify-center gap-2 transition-opacity",
                     (state === "loading" || !message.trim()) ? "opacity-60 cursor-not-allowed" : "hover:opacity-90"
                   )}
                 >
@@ -151,7 +151,7 @@ export function ChatWidget() {
                   )}
                 </button>
 
-                <p className="font-sans text-xs text-navy/40 text-center">
+                <p className="font-sans text-xs text-ivory/40 text-center">
                   {t("or_telegram")}{" "}
                   <a
                     href="https://t.me/Oksana_Iatsenko"
@@ -171,7 +171,7 @@ export function ChatWidget() {
       {/* Подсказка */}
       {state === "idle" && showHint && (
         <div
-          className="flex items-center gap-2 bg-navy text-white pl-4 pr-5 py-3 shadow-xl cursor-pointer hover:bg-navy/90 transition-colors animate-slide-up"
+          className="flex items-center gap-2 bg-ink-950 text-white pl-4 pr-5 py-3 shadow-xl cursor-pointer hover:bg-ink-950/90 transition-colors animate-slide-up"
           onClick={handleOpen}
         >
           <MessageCircle size={16} className="text-gold flex-shrink-0" />
@@ -185,7 +185,7 @@ export function ChatWidget() {
         aria-label={t("aria_open")}
         className={cn(
           "w-14 h-14 flex items-center justify-center shadow-xl transition-all duration-200 hover:scale-105",
-          state === "idle" || state === "success" ? "bg-navy text-white" : "bg-navy/80 text-white"
+          state === "idle" || state === "success" ? "bg-ink-950 text-white" : "bg-ink-950/80 text-white"
         )}
       >
         {state === "open" || state === "loading" || state === "error" ? (

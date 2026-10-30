@@ -55,9 +55,9 @@ export default async function PropertyDetailPage({
   const waMessage = `Здравствуйте! Интересует объект: ${property.title.ru}. Хочу узнать подробности.`;
 
   return (
-    <div className="pt-20 min-h-screen bg-[#FAF8F5]">
+    <div className="pt-20 min-h-screen bg-ink-900">
       {/* Breadcrumb bar */}
-      <div className="bg-[#1B2B4B] text-white py-5">
+      <div className="bg-ink-950 text-white py-5">
         <div className="container-site">
           <Link
             href={`/${locale}/properties`}
@@ -91,7 +91,7 @@ export default async function PropertyDetailPage({
                   </span>
                 )}
                 {property.seaView && (
-                  <span className="flex items-center gap-1 bg-[#1B2B4B] text-white font-sans text-xs font-semibold px-2 py-0.5">
+                  <span className="flex items-center gap-1 bg-ink-950 text-white font-sans text-xs font-semibold px-2 py-0.5">
                     <Waves size={10} /> {tFeatured("sea_view")}
                   </span>
                 )}
@@ -107,7 +107,7 @@ export default async function PropertyDetailPage({
                 )}
               </div>
               {property.yield && (
-                <div className="absolute top-3 right-3 bg-[#1B2B4B]/90 text-[#C9A84C] font-sans text-xs font-semibold px-2 py-0.5">
+                <div className="absolute top-3 right-3 bg-ink-950/90 text-[#C9A84C] font-sans text-xs font-semibold px-2 py-0.5">
                   ~{property.yield}% {t("yield_label")}
                 </div>
               )}
@@ -131,7 +131,7 @@ export default async function PropertyDetailPage({
             )}
 
             {/* Title */}
-            <h1 className="font-serif text-3xl md:text-4xl text-[#1B2B4B] mb-2 leading-tight">
+            <h1 className="font-serif text-3xl md:text-4xl text-ivory mb-2 leading-tight">
               {title}
             </h1>
             <div className="flex items-center gap-2 text-[#C9A84C] font-sans text-sm font-medium mb-6">
@@ -140,34 +140,34 @@ export default async function PropertyDetailPage({
             </div>
 
             {/* Description */}
-            <p className="font-sans text-base text-gray-700 leading-relaxed">{description}</p>
+            <p className="font-sans text-base text-ivory leading-relaxed">{description}</p>
           </div>
 
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-4">
             {/* Price card */}
-            <div className="bg-white p-6 shadow-sm">
-              <div className="font-serif text-3xl text-[#1B2B4B] font-semibold mb-1">
+            <div className="glass-card p-6">
+              <div className="font-serif text-3xl text-ivory font-semibold mb-1">
                 {formatPrice(property.price)}
                 {property.type === "rent" && (
-                  <span className="font-sans text-sm text-[#1B2B4B]/50 font-normal ml-1">
+                  <span className="font-sans text-sm text-ivory/50 font-normal ml-1">
                     {tProperties("monthly")}
                   </span>
                 )}
               </div>
               {property.pricePerSqm && (
-                <div className="font-sans text-sm text-[#1B2B4B]/50">
+                <div className="font-sans text-sm text-ivory/50">
                   {formatPrice(property.pricePerSqm)} {tProperties("per_sqm")}
                 </div>
               )}
-              <div className="mt-3 inline-block bg-[#1B2B4B]/10 text-[#1B2B4B] font-sans text-xs font-semibold px-2 py-0.5">
+              <div className="mt-3 inline-block bg-ivory/10 text-ivory font-sans text-xs font-semibold px-2 py-0.5">
                 {property.type === "buy" ? t("type_buy") : t("type_rent")}
               </div>
             </div>
 
             {/* Details card */}
-            <div className="bg-white p-6 shadow-sm">
-              <h2 className="font-serif text-lg text-[#1B2B4B] mb-4">{t("details")}</h2>
+            <div className="glass-card p-6">
+              <h2 className="font-serif text-lg text-ivory mb-4">{t("details")}</h2>
               <dl className="space-y-1">
                 {[
                   { label: tFeatured("sqm"), value: `${property.area} м²` },
@@ -179,11 +179,11 @@ export default async function PropertyDetailPage({
                 ].map(({ label, value, gold }) => (
                   <div
                     key={label}
-                    className="flex justify-between items-center py-2.5 border-b border-[#1B2B4B]/10 last:border-0"
+                    className="flex justify-between items-center py-2.5 border-b border-ivory/10 last:border-0"
                   >
-                    <dt className="font-sans text-sm text-[#1B2B4B]/60">{label}</dt>
+                    <dt className="font-sans text-sm text-ivory/60">{label}</dt>
                     <dd
-                      className={`font-sans text-sm font-semibold ${gold ? "text-[#C9A84C]" : "text-[#1B2B4B]"}`}
+                      className={`font-sans text-sm font-semibold ${gold ? "text-[#C9A84C]" : "text-ivory"}`}
                     >
                       {value}
                     </dd>
@@ -193,7 +193,7 @@ export default async function PropertyDetailPage({
             </div>
 
             {/* CTA card */}
-            <div className="bg-[#1B2B4B] p-6 text-white">
+            <div className="bg-ink-950 p-6 text-white">
               <h2 className="font-serif text-xl mb-2">{t("contact_title")}</h2>
               <p className="font-sans text-sm text-white/70 mb-5">{t("contact_desc")}</p>
               <div className="space-y-3">

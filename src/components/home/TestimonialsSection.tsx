@@ -55,16 +55,16 @@ export function TestimonialsSection() {
   const testimonial = TESTIMONIALS[active];
 
   return (
-    <section className="py-20 bg-white border-t border-gray-100">
+    <section className="py-20 bg-ink-900 border-t border-gold/10">
       <div className="container-site">
         <div className="text-center mb-14">
           <h2 className="section-title mb-3">{t("title")}</h2>
-          <p className="font-sans text-navy/50 text-sm">{t("subtitle")}</p>
+          <p className="font-sans text-ivory/50 text-sm">{t("subtitle")}</p>
         </div>
 
         <div className="max-w-3xl mx-auto">
           {/* Main testimonial */}
-          <div className="bg-white p-8 md:p-12 relative shadow-sm">
+          <div className="glass-card p-8 md:p-12">
             <Quote
               size={40}
               className="absolute top-6 right-6 text-gold/20"
@@ -74,27 +74,27 @@ export function TestimonialsSection() {
             {/* Stars */}
             <div className="flex gap-1 mb-6">
               {Array.from({ length: testimonial.rating }).map((_, i) => (
-                <svg key={i} viewBox="0 0 24 24" fill="#C9A84C" className="w-4 h-4">
+                <svg key={i} viewBox="0 0 24 24" fill="#D4AF62" className="w-4 h-4">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               ))}
             </div>
 
-            <blockquote className="font-serif text-lg md:text-xl text-navy leading-relaxed italic mb-8">
+            <blockquote className="font-serif text-lg md:text-xl text-ivory leading-relaxed italic mb-8">
               &ldquo;{testimonial.text}&rdquo;
             </blockquote>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-navy flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-full border border-gold/50 bg-ink-950 flex items-center justify-center flex-shrink-0">
                 <span className="font-sans font-semibold text-gold text-sm">
                   {testimonial.avatar}
                 </span>
               </div>
               <div>
-                <div className="font-sans font-semibold text-sm text-navy">
+                <div className="font-sans font-semibold text-sm text-ivory">
                   {testimonial.name}
                 </div>
-                <div className="font-sans text-xs text-navy/50">{testimonial.city}</div>
+                <div className="font-sans text-xs text-ivory/50">{testimonial.city}</div>
                 <div className="font-sans text-xs text-gold mt-0.5">{testimonial.type}</div>
               </div>
             </div>
@@ -112,7 +112,7 @@ export function TestimonialsSection() {
                     "transition-all duration-200",
                     i === active
                       ? "w-8 h-2 bg-gold"
-                      : "w-2 h-2 bg-navy/20 hover:bg-navy/40"
+                      : "w-2 h-2 bg-ivory/20 hover:bg-ink-950/40"
                   )}
                   aria-label={`${t("review_label")} ${i + 1}`}
                 />
@@ -123,13 +123,13 @@ export function TestimonialsSection() {
             <div className="flex gap-2">
               <button
                 onClick={prev}
-                className="w-10 h-10 border border-navy/20 flex items-center justify-center text-navy hover:bg-navy hover:text-white transition-colors"
+                className="w-10 h-10 border border-ivory/20 flex items-center justify-center text-ivory hover:bg-ink-950 hover:text-white transition-colors"
               >
                 <ChevronLeft size={18} />
               </button>
               <button
                 onClick={next}
-                className="w-10 h-10 border border-navy/20 flex items-center justify-center text-navy hover:bg-navy hover:text-white transition-colors"
+                className="w-10 h-10 border border-ivory/20 flex items-center justify-center text-ivory hover:bg-ink-950 hover:text-white transition-colors"
               >
                 <ChevronRight size={18} />
               </button>

@@ -16,7 +16,7 @@ export function ServicesSection() {
   const locale = useLocale();
 
   return (
-    <section className="py-20 bg-white border-t border-gray-100">
+    <section className="py-20 bg-ink-900 border-t border-gold/10">
       <div className="container-site">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
@@ -27,13 +27,13 @@ export function ServicesSection() {
                 {t("badge")}
               </span>
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl text-ivory leading-tight">
               {t("title")}
             </h2>
           </div>
           <Link
             href={`/${locale}/properties`}
-            className="inline-flex items-center gap-2 font-sans text-sm text-[#1A1A1A] hover:text-gold transition-colors group flex-shrink-0"
+            className="inline-flex items-center gap-2 font-sans text-sm text-ivory hover:text-gold transition-colors group flex-shrink-0"
           >
             {t("all_link")}
             <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
@@ -41,14 +41,14 @@ export function ServicesSection() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map(({ key, icon: Icon, image }) => (
             <Link
               key={key}
               href={key === "buy" || key === "rent" || key === "newbuild"
                 ? `/${locale}/properties`
                 : `/${locale}/properties`}
-              className="group relative bg-white overflow-hidden flex flex-col"
+              className="glass-card group flex flex-col hover:-translate-y-1"
             >
               {/* Image */}
               <div className="relative h-52 overflow-hidden">
@@ -56,25 +56,25 @@ export function ServicesSection() {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url('${image}')` }}
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
-                <div className="absolute top-4 left-4 w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/30 flex items-center justify-center">
-                  <Icon size={18} className="text-white" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-950/20 to-transparent transition-colors duration-300" />
+                <div className="absolute top-4 left-4 w-10 h-10 rounded-md bg-ink-950/50 backdrop-blur-sm border border-gold/50 flex items-center justify-center">
+                  <Icon size={18} className="text-gold" />
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-5 flex items-center justify-between border-b border-gray-100">
+              <div className="p-5 flex items-center justify-between">
                 <div>
-                  <h3 className="font-serif text-lg text-[#1A1A1A] group-hover:text-gold transition-colors">
+                  <h3 className="font-serif text-lg text-ivory group-hover:text-gold transition-colors">
                     {t(`items.${key}.title`)}
                   </h3>
-                  <p className="font-sans text-xs text-gray-400 mt-1 leading-relaxed">
+                  <p className="font-sans text-xs text-ivory/50 mt-1 leading-relaxed">
                     {t(`items.${key}.desc`)}
                   </p>
                 </div>
                 <ArrowRight
                   size={16}
-                  className="text-gray-300 group-hover:text-gold group-hover:translate-x-1 transition-all flex-shrink-0 ml-4"
+                  className="text-ivory/30 group-hover:text-gold group-hover:translate-x-1 transition-all flex-shrink-0 ml-4"
                 />
               </div>
             </Link>

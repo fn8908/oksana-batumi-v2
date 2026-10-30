@@ -66,10 +66,10 @@ export default function InvestPage() {
       </section>
 
       {/* Steps */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-ink-800">
         <div className="container-site">
           <div className="text-center mb-14">
-            <h2 className="font-serif text-4xl text-navy mb-4 gold-line inline-block">
+            <h2 className="font-serif text-4xl text-ivory mb-4 gold-line inline-block">
               {t("steps_title")}
             </h2>
           </div>
@@ -77,16 +77,16 @@ export default function InvestPage() {
             {steps.map((step, i) => (
               <div key={i} className="flex gap-8 group">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-navy flex items-center justify-center flex-shrink-0 group-hover:bg-gold transition-colors">
+                  <div className="w-12 h-12 bg-ink-950 flex items-center justify-center flex-shrink-0 group-hover:bg-gold transition-colors">
                     <span className="font-sans text-xs font-bold text-white tracking-wider">{step.num}</span>
                   </div>
                   {i < steps.length - 1 && (
-                    <div className="w-px flex-1 bg-navy/10 my-2" />
+                    <div className="w-px flex-1 bg-ivory/10 my-2" />
                   )}
                 </div>
                 <div className={`pb-10 ${i === steps.length - 1 ? "" : ""}`}>
-                  <h3 className="font-serif text-xl text-navy mb-2 mt-2.5">{step.title}</h3>
-                  <p className="font-sans text-sm text-navy/60 leading-relaxed">{step.desc}</p>
+                  <h3 className="font-serif text-xl text-ivory mb-2 mt-2.5">{step.title}</h3>
+                  <p className="font-sans text-sm text-ivory/60 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -95,22 +95,22 @@ export default function InvestPage() {
       </section>
 
       {/* Why Batumi */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-ink-900">
         <div className="container-site">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-4xl text-navy mb-4 gold-line inline-block">
+            <h2 className="font-serif text-4xl text-ivory mb-4 gold-line inline-block">
               {tw("title")}
             </h2>
-            <p className="font-sans text-navy/50 text-sm mt-4">{tw("subtitle")}</p>
+            <p className="font-sans text-ivory/50 text-sm mt-4">{tw("subtitle")}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {whyItems.map((item, i) => (
-              <div key={i} className="bg-white border border-navy/10 p-6 hover:border-gold transition-colors">
+              <div key={i} className="glass-card p-6">
                 <div className="flex items-start gap-3">
                   <CheckCircle size={16} className="text-gold mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="font-serif text-xl text-navy mb-2 font-semibold">{item.title}</div>
-                    <p className="font-sans text-sm text-navy/70 leading-relaxed">{item.desc}</p>
+                    <div className="font-serif text-xl text-ivory mb-2 font-semibold">{item.title}</div>
+                    <p className="font-sans text-sm text-ivory/70 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function InvestPage() {
       </section>
 
       {/* Yield details */}
-      <section className="py-20 bg-navy text-white">
+      <section className="py-20 bg-ink-950 text-white">
         <div className="container-site">
           <div className="text-center mb-12">
             <h2 className="font-serif text-4xl text-white mb-4">{t("yield_title")}</h2>
@@ -138,10 +138,10 @@ export default function InvestPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-ink-900">
         <div className="container-site text-center">
-          <h2 className="font-serif text-4xl text-navy mb-4">{t("cta_title")}</h2>
-          <p className="font-sans text-navy/60 mb-8 max-w-md mx-auto">{t("cta_text")}</p>
+          <h2 className="font-serif text-4xl text-ivory mb-4">{t("cta_title")}</h2>
+          <p className="font-sans text-ivory/60 mb-8 max-w-md mx-auto">{t("cta_text")}</p>
           <a
             href={getWhatsAppLink(whatsappMsg)}
             target="_blank"
