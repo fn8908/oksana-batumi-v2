@@ -13,11 +13,7 @@ export function HeroSection() {
       {/* Background image */}
       <div data-parallax="0.35" className="absolute inset-0 will-change-transform">
         <div
-          className="hero-zoom absolute inset-0 bg-cover bg-[position:28%_top] lg:bg-top bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url('/images/hero-oksana-batumi.jpg')",
-          }}
+          className="hero-zoom absolute inset-0 bg-cover bg-top bg-no-repeat bg-[url('/images/hero-oksana-batumi-mobile.jpg')] md:bg-[url('/images/hero-oksana-batumi.jpg')]"
         />
       </div>
       {/* Gradient overlay */}
@@ -26,7 +22,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-950/10 via-30% to-transparent" />
 
       {/* Content: compact glass panel, bottom right */}
-      <div className="relative z-10 container-site mt-auto pt-[62vh] pb-14 lg:mt-0 lg:pt-0 lg:min-h-screen lg:flex lg:items-end lg:justify-end lg:pb-10">
+      <div className="relative z-10 container-site mt-auto pt-[72vh] pb-14 lg:mt-0 lg:pt-0 lg:min-h-screen lg:flex lg:items-end lg:justify-end lg:pb-10">
         <div className="max-w-[580px] [text-shadow:0_2px_24px_rgba(0,0,0,0.85)]">
           {/* Badge */}
           <div className="hero-in inline-flex items-center gap-3 mb-3" style={{ animationDelay: "0.15s" }}>
