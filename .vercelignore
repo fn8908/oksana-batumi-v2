@@ -1,0 +1,8 @@
+.git
+.vercel
+node_modules*
+.next*
+*.log
+.DS_Store
+SYSTEM_PROMPT_*.txt
+* 2.*
