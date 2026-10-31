@@ -47,7 +47,9 @@
     "ready": "Ready",
     "sqm": "m²",
     "rooms": "rooms",
-    "floor": "fl."
+    "floor": "fl.",
+    "per_sqm": "per m²",
+    "monthly": "/mo"
   },
   "about_snippet": {
     "title": "Why clients trust me",

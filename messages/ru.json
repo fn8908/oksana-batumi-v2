@@ -52,7 +52,9 @@
     "floor": "эт.",
     "filter_invest": "Инвестиции",
     "filter_life": "Для жизни",
-    "filter_budget": "До 100 000 $"
+    "filter_budget": "До 100 000 $",
+    "per_sqm": "за м²",
+    "monthly": "/мес"
   },
   "about_snippet": {
     "title": "Почему клиенты доверяют мне",

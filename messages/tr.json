@@ -47,7 +47,9 @@
     "ready": "Hazır",
     "sqm": "m²",
     "rooms": "oda",
-    "floor": "kat"
+    "floor": "kat",
+    "per_sqm": "m² başına",
+    "monthly": "/ay"
   },
   "about_snippet": {
     "title": "Müşteriler neden güveniyor",

@@ -47,7 +47,9 @@
     "ready": "מוכן",
     "sqm": "מ\"ר",
     "rooms": "חדרים",
-    "floor": "קומה"
+    "floor": "קומה",
+    "per_sqm": "למ\"ר",
+    "monthly": "/חודש"
   },
   "about_snippet": {
     "title": "למה לקוחות סומכים עלי",
